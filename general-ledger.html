@@ -521,8 +521,8 @@
                                     </div>
                                 </button>
                                 <ul x-cloak x-show="activeDropdown === 'customer'" x-collapse class="sub-menu text-gray-500">
-                                    <li><a href="https://buraq.smartaccount.online/add_customer">Add Customer</a></li>
-                                    <li><a href="https://buraq.smartaccount.online/customer_list">Customer List</a></li>
+                                    <li><a href="add-customer.html">Add Customer</a></li>
+                                    <li><a href="customer-list.html">Customer List</a></li>
                                 </ul>
                             
                                 <script>
@@ -2451,341 +2451,384 @@
                     </div>
                 </header>-->
                 <!-- end header section -->
-                
+
                 <div class="animate__animated p-6" :class="[$store.app.animation]">
                     <!-- start main content section -->
-                    <div x-data="exportTable">
-                       
-                            
-                            
-                        
-                    </div>
-                </div>
-                
-                
-                
-                
-                <div class="animate__animated p-6" :class="[$store.app.animation]">
-                    <!-- start main content section -->
-                    <div x-data="exportTable">
-                        
-                            
-                            
-                        </div>
-                        <div class="panel mt-6">
-                            <div class="md:absolute md:top-5 ltr:md:left-5 rtl:md:right-5">
-                                <div class="mb-5 flex flex-wrap items-center">
-                                   
-                                </div>
-                            </div>
-                            <table id="myTable" class="table-hover whitespace-nowrap"></table>
-                        </div>
-                    </div>
-                    <!-- end main content section -->
+                    <div x-data="form">
 
-                </div>
-
-                <!-- start footer section -->
-                <div class="p-6 pt-0 mt-auto text-center dark:text-white-dark ltr:sm:text-left rtl:sm:text-right">
-                   <center> © <span id="footer-year">2023</span>. Buraq Accounting All rights reserved.
-                </div>
-                <!-- end footer section -->
+<div class="panel">
+    <div class="mb-5 flex items-center justify-between">
+        <form>
+        <h5 class="text-lg font-semibold dark:text-white-light">Transaction Head</h5>
+       
+    </div>
+    <div class="mb-5">
+        
+            <div>
+                <select class="form-select text-white-dark">
+                    <option>Select option</option>
+                    <option>1-</option>
+                    <option>ADMINSTRATIVE SALARY (ASLAM)</option>
+                    <option>ADMINISTARTIVE SALARY (MOHAMMED)</option>
+                    <option>ADMINISTARTIVE SALARY - DAMBER</option>
+                    <option>ADMINISTARTIVE SALARY (SIBI)</option>
+                    <option>ADMINISTRATIVE SALARY (SUDISH)</option>
+                    <option>Advance Against CustomerAdvance against Employee</option>
+                    <option>BIOMETRIC MACHINE FOR FINGER</option>
+                    <option>BURAQ WEBSITE DESIGN</option>
+                    <option>CAMERA APPROVAL EXPENSE</option>
+                    <option>Capital Fund</option>
+                    <option>COMMISION SHOP REAL ESTATE</option>
+                    <option>COMPANY CATALOGUE & PROFILE</option>
+                    <option>Cost of Goods Sold Account</option>
+                    <option>CSG</option>
+                    <option>Current year Profit & Loss</option>
+                    <option>Customer Receivable</option>
+                    <option>Debts</option>
+                    <option>Depreciation of Goodwill</option>
+                    <option>EJARI EXPENSE</option>
+                    <option>Electric Bill</option>
+                    <option>Employee 10% NPF Expenses</option>
+                    <option>Employee 5% NPF Expenses</option>
+                    <option>Employee Receivable</option>
+                    <option>Employeer 1% ICF Expense</option>
+                    <option>FEWA BILL FOR BURAQ</option>
+                    <option>FEWA DEPOSIT</option>
+                    <option>Goodwill</option>
+                    <option>GOVT FEE (TRAD LICENCE)</option>
+                    <option>GUEST DONATION</option>
+                    <option>House Rent</option>
+                    <option>INTERNET CHARGE FOR SHOP</option>
+                    <option>Inventory Account</option>
+                    <option>INVOICE COMMISION</option>
+                    <option>JAYARAJAN THANDENGATTIL CAPITAL A/C</option>
+                    <option>Last year Profit & Loss</option>
+                    <option>LOAN A/C - MUTHAFA POKKACHI</option>
+                    <option>MUSTHAFA POKKACHI CAPITAL A/C</option>
+                    <option>Other Long - Term Liabilities</option>
+                    <option>PETROL EXPENSE</option>
+                    <option>POS SWIPING MACHINE</option>
+                    <option>PREPAID CHARGES</option>
+                    <option>PREPAID RENT</option>
+                    <option>PRINTING & STATIONORY</option>
+                    <option>Property Sales</option>
+                    <option>Provision for npf contribution</option>
+                    <option>Provision for State Income Tax</option>
+                    <option>Purchase</option>
+                    <option>Salary Expense</option>
+                    <option>Sales Expense</option>
+                    <option>Sales Account</option>
+                    <option>Service Account</option>
+                    <option>SHOP DECORATION EXPENSE</option>
+                    <option>SHOP FURNITURE SETTING EXPENSE</option>
+                    <option>SHOP MAINTANCE EXPENSE</option>
+                    <option>SHOP MOBILE PHONE RECHARGE</option>
+                    <option>SHOP OPENING EXPENSE</option>
+                    <option>SHOP RENT</option>
+                    <option>SOFTWARE & IT EXPENSE</option>
+                    <option>STAFF BONUS</option>
+                    <option>State Income Tax</option>
+                    <option>SUDEESH SALARY</option>
+                    <option>TALLY SOFTWARE EXPENSE</option>
+                    <option>Taxable recv</option>
+                    <option>TELEPHONE EXPENSE</option>
+                    <option>TRADE LICENCE FOR BURAW BM FUJ.</option>
+                    <option>TRADE LICENCE RENEWEL EXPENSE FOR BURAQ</option>
+                    <option>VISA EXPENSE - DAMBER</option>
+                    
+                </select>
+            </div><br><br>
+            
+            <div>
+                <h5 class="text-lg font-semibold dark:text-white-light">From Date</h5>
+       
+                <input type="date" class="form-input" />
             </div>
-        </div>
+            <br><br>
+            <div>
+                <h5 class="text-lg font-semibold dark:text-white-light">To Date</h5>
+       
+                <input type="date" class="form-input" />
+            </div>
+        
+    </div>
+    <template x-if="codeArr.includes('code26')">
+        <pre class="code overflow-auto rounded-md !bg-[#191e3a] p-4 text-white">
+&lt;!-- select menu --&gt;
+&lt;form&gt;
+&lt;div&gt;
+&lt;select class=&quot;form-select text-white-dark&quot;&gt;
+&lt;option&gt;Open this select menu&lt;/option&gt;
+&lt;option&gt;One&lt;/option&gt;
+&lt;option&gt;Two&lt;/option&gt;
+&lt;option&gt;Three&lt;/option&gt;
+&lt;/select&gt;
+&lt;/div&gt;
+&lt;/form&gt;
+</pre
+        >
+    </template>
 
-        <script src="assets/js/highlight.min.js"></script>
-        <script src="assets/js/alpine-collaspe.min.js"></script>
-        <script src="assets/js/alpine-persist.min.js"></script>
-        <script defer src="assets/js/alpine-ui.min.js"></script>
-        <script defer src="assets/js/alpine-focus.min.js"></script>
-        <script defer src="assets/js/alpine.min.js"></script>
-        <script src="assets/js/custom.js"></script>
-        <script src="assets/js/simple-datatables.js"></script>
-        <script>
-            document.addEventListener('alpine:init', () => {
-                // main section
-                Alpine.data('scrollToTop', () => ({
-                    showTopButton: false,
-                    init() {
-                        window.onscroll = () => {
-                            this.scrollFunction();
-                        };
-                    },
 
-                    scrollFunction() {
-                        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                            this.showTopButton = true;
-                        } else {
-                            this.showTopButton = false;
-                        }
-                    },
+    
+    <button type="find" class="btn btn-primary mt-6">Find</button>
+</form>
+</div>
+</div>
 
-                    goToTop() {
-                        document.body.scrollTop = 0;
-                        document.documentElement.scrollTop = 0;
-                    },
-                }));
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<!-- start footer section -->
+<div class="p-6 pt-0 mt-auto text-center dark:text-white-dark ltr:sm:text-left rtl:sm:text-right">
+   <center> © <span id="footer-year">2023</span>. Buraq Accounting All rights reserved. </center>
+</div>
+<!-- end footer section -->
+</div>
+</div>
 
-                // theme customization
-                Alpine.data('customizer', () => ({
-                    showCustomizer: false,
-                }));
+<script src="assets/js/alpine-collaspe.min.js"></script>
+<script src="assets/js/alpine-persist.min.js"></script>
+<script defer src="assets/js/alpine-ui.min.js"></script>
+<script defer src="assets/js/alpine-focus.min.js"></script>
+<script defer src="assets/js/alpine.min.js"></script>
+<script src="assets/js/custom.js"></script>
+<!-- start hightlight js -->
+<link rel="stylesheet" href="assets/css/highlight.min.css" />
+<script src="assets/js/highlight.min.js"></script>
+<!-- end hightlight js -->
 
-                // sidebar section
-                Alpine.data('sidebar', () => ({
-                    init() {
-                        const selector = document.querySelector('.sidebar ul a[href="' + window.location.pathname + '"]');
-                        if (selector) {
-                            selector.classList.add('active');
-                            const ul = selector.closest('ul.sub-menu');
-                            if (ul) {
-                                let ele = ul.closest('li.menu').querySelectorAll('.nav-link');
-                                if (ele) {
-                                    ele = ele[0];
-                                    setTimeout(() => {
-                                        ele.click();
-                                    });
-                                }
-                            }
-                        }
-                    },
-                }));
+<script>
+document.addEventListener('alpine:init', () => {
+// main section
+Alpine.data('scrollToTop', () => ({
+    showTopButton: false,
+    init() {
+        window.onscroll = () => {
+            this.scrollFunction();
+        };
+    },
 
-                // header section
-                Alpine.data('header', () => ({
-                    init() {
-                        const selector = document.querySelector('ul.horizontal-menu a[href="' + window.location.pathname + '"]');
-                        if (selector) {
-                            selector.classList.add('active');
-                            const ul = selector.closest('ul.sub-menu');
-                            if (ul) {
-                                let ele = ul.closest('li.menu').querySelectorAll('.nav-link');
-                                if (ele) {
-                                    ele = ele[0];
-                                    setTimeout(() => {
-                                        ele.classList.add('active');
-                                    });
-                                }
-                            }
-                        }
-                    },
+    scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            this.showTopButton = true;
+        } else {
+            this.showTopButton = false;
+        }
+    },
 
-                    notifications: [
-                        {
-                            id: 1,
-                            profile: 'user-profile.jpeg',
-                            message: '<strong class="text-sm mr-1">John Doe</strong>invite you to <strong>Prototyping</strong>',
-                            time: '45 min ago',
-                        },
-                        {
-                            id: 2,
-                            profile: 'profile-34.jpeg',
-                            message: '<strong class="text-sm mr-1">Adam Nolan</strong>mentioned you to <strong>UX Basics</strong>',
-                            time: '9h Ago',
-                        },
-                        {
-                            id: 3,
-                            profile: 'profile-16.jpeg',
-                            message: '<strong class="text-sm mr-1">Anna Morgan</strong>Upload a file',
-                            time: '9h Ago',
-                        },
-                    ],
+    goToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    },
+}));
 
-                    messages: [
-                        {
-                            id: 1,
-                            image: '<span class="grid place-content-center w-9 h-9 rounded-full bg-success-light dark:bg-success text-success dark:text-success-light"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></span>',
-                            title: 'Congratulations!',
-                            message: 'Your OS has been updated.',
-                            time: '1hr',
-                        },
-                        {
-                            id: 2,
-                            image: '<span class="grid place-content-center w-9 h-9 rounded-full bg-info-light dark:bg-info text-info dark:text-info-light"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>',
-                            title: 'Did you know?',
-                            message: 'You can switch between artboards.',
-                            time: '2hr',
-                        },
-                        {
-                            id: 3,
-                            image: '<span class="grid place-content-center w-9 h-9 rounded-full bg-danger-light dark:bg-danger text-danger dark:text-danger-light"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></span>',
-                            title: 'Something went wrong!',
-                            message: 'Send Reposrt',
-                            time: '2days',
-                        },
-                        {
-                            id: 4,
-                            image: '<span class="grid place-content-center w-9 h-9 rounded-full bg-warning-light dark:bg-warning text-warning dark:text-warning-light"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">    <circle cx="12" cy="12" r="10"></circle>    <line x1="12" y1="8" x2="12" y2="12"></line>    <line x1="12" y1="16" x2="12.01" y2="16"></line></svg></span>',
-                            title: 'Warning',
-                            message: 'Your password strength is low.',
-                            time: '5days',
-                        },
-                    ],
+// theme customization
+Alpine.data('customizer', () => ({
+    showCustomizer: false,
+}));
 
-                    languages: [
-                        {
-                            id: 1,
-                            key: 'Chinese',
-                            value: 'zh',
-                        },
-                        {
-                            id: 2,
-                            key: 'Danish',
-                            value: 'da',
-                        },
-                        {
-                            id: 3,
-                            key: 'English',
-                            value: 'en',
-                        },
-                        {
-                            id: 4,
-                            key: 'French',
-                            value: 'fr',
-                        },
-                        {
-                            id: 5,
-                            key: 'German',
-                            value: 'de',
-                        },
-                        {
-                            id: 6,
-                            key: 'Greek',
-                            value: 'el',
-                        },
-                        {
-                            id: 7,
-                            key: 'Hungarian',
-                            value: 'hu',
-                        },
-                        {
-                            id: 8,
-                            key: 'Italian',
-                            value: 'it',
-                        },
-                        {
-                            id: 9,
-                            key: 'Japanese',
-                            value: 'ja',
-                        },
-                        {
-                            id: 10,
-                            key: 'Polish',
-                            value: 'pl',
-                        },
-                        {
-                            id: 11,
-                            key: 'Portuguese',
-                            value: 'pt',
-                        },
-                        {
-                            id: 12,
-                            key: 'Russian',
-                            value: 'ru',
-                        },
-                        {
-                            id: 13,
-                            key: 'Spanish',
-                            value: 'es',
-                        },
-                        {
-                            id: 14,
-                            key: 'Swedish',
-                            value: 'sv',
-                        },
-                        {
-                            id: 15,
-                            key: 'Turkish',
-                            value: 'tr',
-                        },
-                        {
-                            id: 16,
-                            key: 'Arabic',
-                            value: 'ae',
-                        },
-                    ],
+// sidebar section
+Alpine.data('sidebar', () => ({
+    init() {
+        const selector = document.querySelector('.sidebar ul a[href="' + window.location.pathname + '"]');
+        if (selector) {
+            selector.classList.add('active');
+            const ul = selector.closest('ul.sub-menu');
+            if (ul) {
+                let ele = ul.closest('li.menu').querySelectorAll('.nav-link');
+                if (ele) {
+                    ele = ele[0];
+                    setTimeout(() => {
+                        ele.click();
+                    });
+                }
+            }
+        }
+    },
+}));
 
-                    removeNotification(value) {
-                        this.notifications = this.notifications.filter((d) => d.id !== value);
-                    },
+// header section
+Alpine.data('header', () => ({
+    init() {
+        const selector = document.querySelector('ul.horizontal-menu a[href="' + window.location.pathname + '"]');
+        if (selector) {
+            selector.classList.add('active');
+            const ul = selector.closest('ul.sub-menu');
+            if (ul) {
+                let ele = ul.closest('li.menu').querySelectorAll('.nav-link');
+                if (ele) {
+                    ele = ele[0];
+                    setTimeout(() => {
+                        ele.classList.add('active');
+                    });
+                }
+            }
+        }
+    },
 
-                    removeMessage(value) {
-                        this.messages = this.messages.filter((d) => d.id !== value);
-                    },
-                }));
+    notifications: [
+        {
+            id: 1,
+            profile: 'user-profile.jpeg',
+            message: '<strong class="text-sm mr-1">John Doe</strong>invite you to <strong>Prototyping</strong>',
+            time: '45 min ago',
+        },
+        {
+            id: 2,
+            profile: 'profile-34.jpeg',
+            message: '<strong class="text-sm mr-1">Adam Nolan</strong>mentioned you to <strong>UX Basics</strong>',
+            time: '9h Ago',
+        },
+        {
+            id: 3,
+            profile: 'profile-16.jpeg',
+            message: '<strong class="text-sm mr-1">Anna Morgan</strong>Upload a file',
+            time: '9h Ago',
+        },
+    ],
 
-                Alpine.data('exportTable', () => ({
-                    datatable: null,
-                    init() {
-                        this.datatable = new simpleDatatables.DataTable('#myTable', {
-                            data: {
-                                headings: ['SL.', 'Customer Name', 'Address1', 'Mobile No.', 'Email', 'VAT No.', 'CR No.', 'Zip Code','Country', 'Balance', 'No. of Credit Days', 'Action'],
-                                data: [
-                                   
-                                ],
-                            },
-                            perPage: 10,
-                            perPageSelect: [10, 20, 30, 50, 100],
-                            columns: [
-                                {
-                                    select: 0,
-                                    sort: 'asc',
-                                },
-                                {
-                                    select: 5,
-                                    render: (data, cell, row) => {
-                                        return this.formatDate(data);
-                                    },
-                                },
-                            ],
-                            firstLast: true,
-                            firstText:
-                                '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-4.5 h-4.5 rtl:rotate-180"> <path d="M13 19L7 12L13 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> <path opacity="0.5" d="M16.9998 19L10.9998 12L16.9998 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> </svg>',
-                            lastText:
-                                '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-4.5 h-4.5 rtl:rotate-180"> <path d="M11 19L17 12L11 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> <path opacity="0.5" d="M6.99976 19L12.9998 12L6.99976 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> </svg>',
-                            prevText:
-                                '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-4.5 h-4.5 rtl:rotate-180"> <path d="M15 5L9 12L15 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> </svg>',
-                            nextText:
-                                '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-4.5 h-4.5 rtl:rotate-180"> <path d="M9 5L15 12L9 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> </svg>',
-                            labels: {
-                                perPage: '{select}',
-                            },
-                            layout: {
-                                top: '{search}',
-                                bottom: '{info}{select}{pager}',
-                            },
-                        });
-                    },
+    messages: [
+        {
+            id: 1,
+            image: '<span class="grid place-content-center w-9 h-9 rounded-full bg-success-light dark:bg-success text-success dark:text-success-light"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></span>',
+            title: 'Congratulations!',
+            message: 'Your OS has been updated.',
+            time: '1hr',
+        },
+        {
+            id: 2,
+            image: '<span class="grid place-content-center w-9 h-9 rounded-full bg-info-light dark:bg-info text-info dark:text-info-light"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>',
+            title: 'Did you know?',
+            message: 'You can switch between artboards.',
+            time: '2hr',
+        },
+        {
+            id: 3,
+            image: '<span class="grid place-content-center w-9 h-9 rounded-full bg-danger-light dark:bg-danger text-danger dark:text-danger-light"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></span>',
+            title: 'Something went wrong!',
+            message: 'Send Reposrt',
+            time: '2days',
+        },
+        {
+            id: 4,
+            image: '<span class="grid place-content-center w-9 h-9 rounded-full bg-warning-light dark:bg-warning text-warning dark:text-warning-light"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">    <circle cx="12" cy="12" r="10"></circle>    <line x1="12" y1="8" x2="12" y2="12"></line>    <line x1="12" y1="16" x2="12.01" y2="16"></line></svg></span>',
+            title: 'Warning',
+            message: 'Your password strength is low.',
+            time: '5days',
+        },
+    ],
 
-                    exportTable(eType) {
-                        var data = {
-                            type: eType,
-                            filename: 'table',
-                            download: true,
-                        };
+    languages: [
+        {
+            id: 1,
+            key: 'Chinese',
+            value: 'zh',
+        },
+        {
+            id: 2,
+            key: 'Danish',
+            value: 'da',
+        },
+        {
+            id: 3,
+            key: 'English',
+            value: 'en',
+        },
+        {
+            id: 4,
+            key: 'French',
+            value: 'fr',
+        },
+        {
+            id: 5,
+            key: 'German',
+            value: 'de',
+        },
+        {
+            id: 6,
+            key: 'Greek',
+            value: 'el',
+        },
+        {
+            id: 7,
+            key: 'Hungarian',
+            value: 'hu',
+        },
+        {
+            id: 8,
+            key: 'Italian',
+            value: 'it',
+        },
+        {
+            id: 9,
+            key: 'Japanese',
+            value: 'ja',
+        },
+        {
+            id: 10,
+            key: 'Polish',
+            value: 'pl',
+        },
+        {
+            id: 11,
+            key: 'Portuguese',
+            value: 'pt',
+        },
+        {
+            id: 12,
+            key: 'Russian',
+            value: 'ru',
+        },
+        {
+            id: 13,
+            key: 'Spanish',
+            value: 'es',
+        },
+        {
+            id: 14,
+            key: 'Swedish',
+            value: 'sv',
+        },
+        {
+            id: 15,
+            key: 'Turkish',
+            value: 'tr',
+        },
+        {
+            id: 16,
+            key: 'Arabic',
+            value: 'ae',
+        },
+    ],
 
-                        if (data.type === 'csv') {
-                            data.lineDelimiter = '\n';
-                            data.columnDelimiter = ';';
-                        }
-                        this.datatable.export(data);
-                    },
+    removeNotification(value) {
+        this.notifications = this.notifications.filter((d) => d.id !== value);
+    },
 
-                    printTable() {
-                        this.datatable.print();
-                    },
+    removeMessage(value) {
+        this.messages = this.messages.filter((d) => d.id !== value);
+    },
+}));
 
-                    formatDate(date) {
-                        if (date) {
-                            const dt = new Date(date);
-                            const month = dt.getMonth() + 1 < 10 ? '0' + (dt.getMonth() + 1) : dt.getMonth() + 1;
-                            const day = dt.getDate() < 10 ? '0' + dt.getDate() : dt.getDate();
-                            return day + '/' + month + '/' + dt.getFullYear();
-                        }
-                        return '';
-                    },
-                }));
+// content section
+Alpine.data('form', () => ({
+    // highlightjs
+    codeArr: [],
+    toggleCode(name) {
+        if (this.codeArr.includes(name)) {
+            this.codeArr = this.codeArr.filter((d) => d != name);
+        } else {
+            this.codeArr.push(name);
+
+            setTimeout(() => {
+                document.querySelectorAll('pre.code').forEach((el) => {
+                    hljs.highlightElement(el);
+                });
             });
-        </script>
-    </body>
+        }
+    },
+}));
+});
+</script>
+</body>
 </html>
+
