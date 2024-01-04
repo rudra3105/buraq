@@ -2269,24 +2269,25 @@
                                                     <th>VAT %</th>
                                                     <th>VAT Value</th>
                                                     <th>Total</th>
-                                                    <th>Action</th>
+                                                    
+                                                    <th class="w-1">Action</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <template x-if="items.length <= 0">
                                                     <tr>
-                                                        <td colspan="12" class="!text-center font-semibold">No Item
+                                                        <td colspan="11" class="!text-center font-semibold">No Item
                                                             Available</td>
                                                     </tr>
                                                 </template>
                                                 <template x-for="(item, i) in items" :key="i">
                                                     <tr class="border-b border-[#e0e6ed] align-top dark:border-[#1b2e4b]">
                                                         <td>
-                                                            <input type="text" class="form-input min-w-[150px]"
+                                                            <input type="text" class="form-input min-w-[100px]"
                                                                 placeholder="Enter Item Name" x-model="item.title" />
                                                         </td>
                                                         <td>
-                                                            <textarea class="form-input min-w-[150px]"
+                                                            <textarea class="form-input min-w-[100px]"
                                                                 placeholder="Enter Description"
                                                                 x-model="item.description"></textarea>
                                                         </td>
@@ -2309,11 +2310,18 @@
                                                         <td x-text="`$${item.amount * item.quantity}`"></td>
                                                         <td>
                                                             <button type="button" @click="removeItem(item)">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24px"
-                                                                    height="24px" viewBox="0 0 24 24" fill="none"
-                                                                    stroke="currentColor" stroke-width="1.5"
-                                                                    stroke-linecap="round" stroke-linejoin="round"
-                                                                    class="h-5 w-5">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24px"
+                                                                    height="24px"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="1.5"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="h-5 w-5"
+                                                                >
                                                                     <line x1="18" y1="6" x2="6" y2="18"></line>
                                                                     <line x1="6" y1="6" x2="18" y2="18"></line>
                                                                 </svg>
@@ -2332,15 +2340,18 @@
                                         <div class="sm:w-1/4">
                                             <div class="flex items-center justify-between">
                                                 <div>Sale Discount</div>
-                                                <div>0.00</div>
+                                                <div class="sm:w-1/2">
+                                                <div>0.00</div></div>
                                             </div>
                                             <div class="mt-4 flex items-center justify-between">
                                                 <div>Total Discount</div>
-                                                <div>0</div>
+                                                <div class="sm:w-1/2">
+                                                <div>0</div></div>
                                             </div>
                                             <div class="mt-4 flex items-center justify-between">
                                                 <div>Total VAT</div>
-                                                <div>0.00</div>
+                                                <div class="sm:w-1/2">
+                                                <div>0.00</div></div>
                                             </div>
                                             <!-- <div class="mt-4 flex items-center justify-between">
                                                 <div>Shipping Cost</div>
@@ -2348,7 +2359,8 @@
                                             </div> -->
                                             <div class="mt-4 flex items-center justify-between font-semibold">
                                                 <div>Grand Total</div>
-                                                <div>0.00</div>
+                                                <div class="sm:w-1/2">
+                                                <div>0.00</div></div>
                                             </div>
 
                                             <!-- <div class="mt-4 flex items-center justify-between font-semibold">
