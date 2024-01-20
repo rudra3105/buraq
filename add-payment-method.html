@@ -12,6 +12,7 @@
         <link rel="stylesheet" type="text/css" media="screen" href="assets/css/perfect-scrollbar.min.css" />
         <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
         <link defer rel="stylesheet" type="text/css" media="screen" href="assets/css/animate.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="assets/js/perfect-scrollbar.min.js"></script>
         <script defer src="assets/js/popper.min.js"></script>
         <script defer src="assets/js/tippy-bundle.umd.min.js"></script>
@@ -365,677 +366,677 @@
         <!-- end theme customizer section -->
 
         <div class="main-container min-h-screen text-black dark:text-white-dark" :class="[$store.app.navbar]">
-                        <!-- start sidebar section -->
-                        <div :class="{'dark text-white-dark' : $store.app.semidark}">
-                            <nav
-                                x-data="sidebar"
-                                class="sidebar fixed bottom-0 top-0 z-50 h-full min-h-screen w-[260px] shadow-[5px_0_25px_0_rgba(94,92,154,0.1)] transition-all duration-300"
+            <!-- start sidebar section -->
+            <div :class="{'dark text-white-dark' : $store.app.semidark}">
+                <nav
+                    x-data="sidebar"
+                    class="sidebar fixed bottom-0 top-0 z-50 h-full min-h-screen w-[260px] shadow-[5px_0_25px_0_rgba(94,92,154,0.1)] transition-all duration-300"
+                >
+                    <div class="h-full bg-white dark:bg-[#0e1726]">
+                        <div class="flex items-center justify-between px-4 py-3">
+                            <a href="index.html" class="main-logo flex shrink-0 items-center">
+                                
+                                <span class="align-middle text-2xl font-semibold ltr:ml-1.5 rtl:mr-1.5 dark:text-white-light lg:inline">BURAQ <br> ACCOUNTING</span>
+                            </a>
+                            <a
+                                href="javascript:;"
+                                class="collapse-icon flex h-8 w-8 items-center rounded-full transition duration-300 hover:bg-gray-500/10 rtl:rotate-180 dark:text-white-light dark:hover:bg-dark-light/10"
+                                @click="$store.app.toggleSidebar()"
                             >
-                                <div class="h-full bg-white dark:bg-[#0e1726]">
-                                    <div class="flex items-center justify-between px-4 py-3">
-                                        <a href="index.html" class="main-logo flex shrink-0 items-center">
-                                            
-                                            <span class="align-middle text-2xl font-semibold ltr:ml-1.5 rtl:mr-1.5 dark:text-white-light lg:inline">BURAQ <br> ACCOUNTING</span>
-                                        </a>
-                                        <a
-                                            href="javascript:;"
-                                            class="collapse-icon flex h-8 w-8 items-center rounded-full transition duration-300 hover:bg-gray-500/10 rtl:rotate-180 dark:text-white-light dark:hover:bg-dark-light/10"
-                                            @click="$store.app.toggleSidebar()"
-                                        >
-                                            <svg class="m-auto h-5 w-5" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M13 19L7 12L13 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                <path
-                                                    opacity="0.5"
-                                                    d="M16.9998 19L10.9998 12L16.9998 5"
-                                                    stroke="currentColor"
-                                                    stroke-width="1.5"
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                />
-                                            </svg>
-                                        </a>
-                                    </div>
-                                    <ul
-                                        class="perfect-scrollbar relative h-[calc(100vh-80px)] space-y-0.5 overflow-y-auto overflow-x-hidden p-4 py-0 font-semibold"
-                                        x-data="{ activeDropdown: 'dashboard' }"
+                                <svg class="m-auto h-5 w-5" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 19L7 12L13 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        opacity="0.5"
+                                        d="M16.9998 19L10.9998 12L16.9998 5"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                        <ul
+                            class="perfect-scrollbar relative h-[calc(100vh-80px)] space-y-0.5 overflow-y-auto overflow-x-hidden p-4 py-0 font-semibold"
+                            x-data="{ activeDropdown: 'dashboard' }"
+                        >
+                        <li class="menu nav-item">
+                            <a href="index.html" class="nav-link group" :class="{'active' : activeDropdown === 'dashboard'}">
+                                <div class="flex items-center">
+                                    <svg
+                                        class="shrink-0 group-hover:!text-primary"
+                                        width="20"
+                                        height="20"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
                                     >
-                                    <li class="menu nav-item">
-                                        <a href="index.html" class="nav-link group" :class="{'active' : activeDropdown === 'dashboard'}">
-                                            <div class="flex items-center">
-                                                <svg
-                                                    class="shrink-0 group-hover:!text-primary"
-                                                    width="20"
-                                                    height="20"
-                                                    viewBox="0 0 24 24"
-                                                    fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                >
-                                                    <path
-                                                        opacity="0.5"
-                                                        d="M2 12.2039C2 9.91549 2 8.77128 2.5192 7.82274C3.0384 6.87421 3.98695 6.28551 5.88403 5.10813L7.88403 3.86687C9.88939 2.62229 10.8921 2 12 2C13.1079 2 14.1106 2.62229 16.116 3.86687L18.116 5.10812C20.0131 6.28551 20.9616 6.87421 21.4808 7.82274C22 8.77128 22 9.91549 22 12.2039V13.725C22 17.6258 22 19.5763 20.8284 20.7881C19.6569 22 17.7712 22 14 22H10C6.22876 22 4.34315 22 3.17157 20.7881C2 19.5763 2 17.6258 2 13.725V12.2039Z"
-                                                        fill="currentColor"
-                                                    />
-                                                    <path
-                                                        d="M9 17.25C8.58579 17.25 8.25 17.5858 8.25 18C8.25 18.4142 8.58579 18.75 9 18.75H15C15.4142 18.75 15.75 18.4142 15.75 18C15.75 17.5858 15.4142 17.25 15 17.25H9Z"
-                                                        fill="currentColor"
-                                                    />
-                                                </svg>
-                                    
-                                                <span class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">Dashboard</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    
-            
-                                        <!---->
-            
-                                        <h2 class="-mx-4 mb-1 flex items-center bg-white-light/30 px-7 py-3 font-extrabold uppercase dark:bg-dark dark:bg-opacity-[0.08]">
-                                            <svg
-                                                class="hidden h-5 w-4 flex-none"
-                                                viewBox="0 0 24 24"
-                                                stroke="currentColor"
-                                                stroke-width="1.5"
-                                                fill="none"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                            >
-                                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                            </svg>
-                                            
-                                        </h2>
-            
-                                        <li class="menu nav-item" x-data="{ activeDropdown: null, quotationDropdown: null }">
-                                            <button
-                                                type="button"
-                                                class="nav-link group"
-                                                :class="{'active' : activeDropdown === 'sales'}"
-                                                @click="toggleSalesDropdown"
-                                            >
-                                                <div class="flex items-center">
-                                                    
+                                        <path
+                                            opacity="0.5"
+                                            d="M2 12.2039C2 9.91549 2 8.77128 2.5192 7.82274C3.0384 6.87421 3.98695 6.28551 5.88403 5.10813L7.88403 3.86687C9.88939 2.62229 10.8921 2 12 2C13.1079 2 14.1106 2.62229 16.116 3.86687L18.116 5.10812C20.0131 6.28551 20.9616 6.87421 21.4808 7.82274C22 8.77128 22 9.91549 22 12.2039V13.725C22 17.6258 22 19.5763 20.8284 20.7881C19.6569 22 17.7712 22 14 22H10C6.22876 22 4.34315 22 3.17157 20.7881C2 19.5763 2 17.6258 2 13.725V12.2039Z"
+                                            fill="currentColor"
+                                        />
+                                        <path
+                                            d="M9 17.25C8.58579 17.25 8.25 17.5858 8.25 18C8.25 18.4142 8.58579 18.75 9 18.75H15C15.4142 18.75 15.75 18.4142 15.75 18C15.75 17.5858 15.4142 17.25 15 17.25H9Z"
+                                            fill="currentColor"
+                                        />
+                                    </svg>
+                        
+                                    <span class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">Dashboard</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+    
+                            <!---->
+    
+                            <h2 class="-mx-4 mb-1 flex items-center bg-white-light/30 px-7 py-3 font-extrabold uppercase dark:bg-dark dark:bg-opacity-[0.08]">
+                                <svg
+                                    class="hidden h-5 w-4 flex-none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    fill="none"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                                
+                            </h2>
+    
+                            <li class="menu nav-item" x-data="{ activeDropdown: null, quotationDropdown: null }">
+                                <button
+                                    type="button"
+                                    class="nav-link group"
+                                    :class="{'active' : activeDropdown === 'sales'}"
+                                    @click="toggleSalesDropdown"
+                                >
+                                    <div class="flex items-center">
                                         
-                                                    <span class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">Sales</span>
-                                                </div>
-                                                <div class="rtl:rotate-180" :class="{'!rotate-90' : activeDropdown === 'sales'}">
-                                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M9 5L15 12L9 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                    </svg>
-                                                </div>
-                                            </button>
-                                            <ul x-cloak x-show="activeDropdown === 'sales'" x-collapse class="sub-menu text-gray-500">
-                                                <li><a href="new-sale.html">New Sale</a></li>
-                                                <li><a href="manage-sale.html">Manage Sale</a></li>
-                                                <li><a href="sales-terms-list.html">Sales Terms List</a></li>
-                                                <li><a href="add-sales-terms.html">Add Sales Terms</a></li>
-                                                <li>
-                                                    <button
-                                                        type="button"
-                                                        class="sub-menu-item group"
-                                                        :class="{'active' : quotationDropdown === 'quotation'}"
-                                                        @click="toggleQuotationDropdown"
-                                                    >
-                                                        <div class="flex items-center">
-                                                            <span class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">Quotation</span>
-                                                        </div>
-                                                        <div class="rtl:rotate-180" :class="{'!rotate-90' : quotationDropdown === 'quotation'}">
-                                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M9 5L15 12L9 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                            </svg>
-                                                        </div>
-                                                    </button>
-                                                    <ul x-cloak x-show="quotationDropdown === 'quotation'" x-collapse class="sub-menu text-gray-500">
-                                                        <li><a href="add-quotation.html">Add Quotation</a></li>
-                                                        <li><a href="manage-quotation.html">Manage Quotation</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        
-                                            <script>
-                                                function toggleSalesDropdown() {
-                                                    this.activeDropdown = this.activeDropdown === 'sales' ? null : 'sales';
-                                                    this.quotationDropdown = null;
-                                                }
-                                        
-                                                function toggleQuotationDropdown() {
-                                                    this.quotationDropdown = this.quotationDropdown === 'quotation' ? null : 'quotation';
-                                                }
-                                            </script>
-                                        </li>
-                                         
-                                        <!---->
-                                        <li class="nav-item" x-data="{ activeDropdown: null, customerDropdown: null }">
-                                            <button
-                                                type="button"
-                                                class="group"
-                                                :class="{'active' : activeDropdown === 'customer'}"
-                                                @click="toggleCustomerDropdown"
-                                            >
-                                                <div class="flex items-center">
-                                                    
-                                                    <span class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">Customer</span>
-                                                </div>
-                                                <div class="rtl:rotate-180" :class="{'!rotate-90' : activeDropdown === 'customer'}">
-                                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M9 5L15 12L9 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                    </svg>
-                                                </div>
-                                            </button>
-                                            <ul x-cloak x-show="activeDropdown === 'customer'" x-collapse class="sub-menu text-gray-500">
-                                                <li><a href="add-customer.html">Add Customer</a></li>
-                                                <li><a href="customer-list.html">Customer List</a></li>
-                                            </ul>
-                                        
-                                            <script>
-                                                function toggleCustomerDropdown() {
-                                                    this.activeDropdown = this.activeDropdown === 'customer' ? null : 'customer';
-                                                    this.customerDropdown = null;
-                                                }
-                                            </script>
-                                        </li>
-                                       <!----> 
-                                                
-                                       <li class="nav-item" x-data="{ activeDropdown: null, supplierDropdown: null }">
+                            
+                                        <span class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">Sales</span>
+                                    </div>
+                                    <div class="rtl:rotate-180" :class="{'!rotate-90' : activeDropdown === 'sales'}">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 5L15 12L9 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </button>
+                                <ul x-cloak x-show="activeDropdown === 'sales'" x-collapse class="sub-menu text-gray-500">
+                                    <li><a href="new-sale.html">New Sale</a></li>
+                                    <li><a href="manage-sale.html">Manage Sale</a></li>
+                                    <li><a href="sales-terms-list.html">Sales Terms List</a></li>
+                                    <li><a href="add-sales-terms.html">Add Sales Terms</a></li>
+                                    <li>
                                         <button
                                             type="button"
-                                            class="group"
-                                            :class="{'active' : activeDropdown === 'supplier'}"
-                                            @click="toggleSupplierDropdown"
+                                            class="sub-menu-item group"
+                                            :class="{'active' : quotationDropdown === 'quotation'}"
+                                            @click="toggleQuotationDropdown"
                                         >
                                             <div class="flex items-center">
-                                               
-                                                <span class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">Supplier</span>
+                                                <span class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">Quotation</span>
                                             </div>
-                                            <div class="rtl:rotate-180" :class="{'!rotate-90' : activeDropdown === 'supplier'}">
+                                            <div class="rtl:rotate-180" :class="{'!rotate-90' : quotationDropdown === 'quotation'}">
                                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M9 5L15 12L9 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                                 </svg>
                                             </div>
                                         </button>
-                                        <ul x-cloak x-show="activeDropdown === 'supplier'" x-collapse class="sub-menu text-gray-500">
-                                            <li><a href="add-supplier.html">Add Supplier</a></li>
-                                            <li><a href="supplier-list.html">Supplier List</a></li>
+                                        <ul x-cloak x-show="quotationDropdown === 'quotation'" x-collapse class="sub-menu text-gray-500">
+                                            <li><a href="add-quotation.html">Add Quotation</a></li>
+                                            <li><a href="manage-quotation.html">Manage Quotation</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            
+                                <script>
+                                    function toggleSalesDropdown() {
+                                        this.activeDropdown = this.activeDropdown === 'sales' ? null : 'sales';
+                                        this.quotationDropdown = null;
+                                    }
+                            
+                                    function toggleQuotationDropdown() {
+                                        this.quotationDropdown = this.quotationDropdown === 'quotation' ? null : 'quotation';
+                                    }
+                                </script>
+                            </li>
+                             
+                            <!---->
+                            <li class="nav-item" x-data="{ activeDropdown: null, customerDropdown: null }">
+                                <button
+                                    type="button"
+                                    class="group"
+                                    :class="{'active' : activeDropdown === 'customer'}"
+                                    @click="toggleCustomerDropdown"
+                                >
+                                    <div class="flex items-center">
+                                        
+                                        <span class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">Customer</span>
+                                    </div>
+                                    <div class="rtl:rotate-180" :class="{'!rotate-90' : activeDropdown === 'customer'}">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 5L15 12L9 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </button>
+                                <ul x-cloak x-show="activeDropdown === 'customer'" x-collapse class="sub-menu text-gray-500">
+                                    <li><a href="add-customer.html">Add Customer</a></li>
+                                    <li><a href="customer-list.html">Customer List</a></li>
+                                </ul>
+                            
+                                <script>
+                                    function toggleCustomerDropdown() {
+                                        this.activeDropdown = this.activeDropdown === 'customer' ? null : 'customer';
+                                        this.customerDropdown = null;
+                                    }
+                                </script>
+                            </li>
+                           <!----> 
+                                    
+                           <li class="nav-item" x-data="{ activeDropdown: null, supplierDropdown: null }">
+                            <button
+                                type="button"
+                                class="group"
+                                :class="{'active' : activeDropdown === 'supplier'}"
+                                @click="toggleSupplierDropdown"
+                            >
+                                <div class="flex items-center">
+                                   
+                                    <span class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">Supplier</span>
+                                </div>
+                                <div class="rtl:rotate-180" :class="{'!rotate-90' : activeDropdown === 'supplier'}">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 5L15 12L9 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </button>
+                            <ul x-cloak x-show="activeDropdown === 'supplier'" x-collapse class="sub-menu text-gray-500">
+                                <li><a href="add-supplier.html">Add Supplier</a></li>
+                                <li><a href="supplier-list.html">Supplier List</a></li>
+                            </ul>
+                        
+                            <script>
+                                function toggleSupplierDropdown() {
+                                    this.activeDropdown = this.activeDropdown === 'supplier' ? null : 'supplier';
+                                    this.supplierDropdown = null;
+                                }
+                            </script>
+                        </li>
+                        
+    
+                                    <!---->
+    
+                                    <li class="nav-item" x-data="{ activeDropdown: null, productDropdown: null }">
+                                        <button
+                                            type="button"
+                                            class="group"
+                                            :class="{'active' : activeDropdown === 'product'}"
+                                            @click="toggleProductDropdown"
+                                        >
+                                            <div class="flex items-center">
+                                               
+                                                <span class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">Product</span>
+                                            </div>
+                                            <div class="rtl:rotate-180" :class="{'!rotate-90' : activeDropdown === 'product'}">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9 5L15 12L9 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </button>
+                                        <ul x-cloak x-show="activeDropdown === 'product'" x-collapse class="sub-menu text-gray-500">
+                                            <li><a href="add-category.html">Add Category</a></li>
+                                            <li><a href="category.html">Category List</a></li>
+                                            <li><a href="add-unit.html">Add Unit</a></li>
+                                            <li><a href="add-unit.html">Unit List</a></li>
+                                            <li><a href="add-product.html">Add Product</a></li>
+                                            <li><a href="add-product-csv.html">Add Product (CSV)</a></li>
+                                            <li><a href="manage-product.html">Manage Product</a></li>
                                         </ul>
                                     
                                         <script>
-                                            function toggleSupplierDropdown() {
-                                                this.activeDropdown = this.activeDropdown === 'supplier' ? null : 'supplier';
-                                                this.supplierDropdown = null;
+                                            function toggleProductDropdown() {
+                                                this.activeDropdown = this.activeDropdown === 'product' ? null : 'product';
+                                                this.productDropdown = null;
                                             }
                                         </script>
                                     </li>
                                     
-            
-                                                <!---->
-            
-                                                <li class="nav-item" x-data="{ activeDropdown: null, productDropdown: null }">
-                                                    <button
-                                                        type="button"
-                                                        class="group"
-                                                        :class="{'active' : activeDropdown === 'product'}"
-                                                        @click="toggleProductDropdown"
-                                                    >
-                                                        <div class="flex items-center">
-                                                           
-                                                            <span class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">Product</span>
-                                                        </div>
-                                                        <div class="rtl:rotate-180" :class="{'!rotate-90' : activeDropdown === 'product'}">
-                                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M9 5L15 12L9 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                            </svg>
-                                                        </div>
-                                                    </button>
-                                                    <ul x-cloak x-show="activeDropdown === 'product'" x-collapse class="sub-menu text-gray-500">
-                                                        <li><a href="add-category.html">Add Category</a></li>
-                                                        <li><a href="category-list.html">Category List</a></li>
-                                                        <li><a href="add-unit.html">Add Unit</a></li>
-                                                        <li><a href="unit-list.html">Unit List</a></li>
-                                                        <li><a href="add-product.html">Add Product</a></li>
-                                                        <li><a href="add-product-csc.html">Add Product (CSV)</a></li>
-                                                        <li><a href="manage-product.html">Manage Product</a></li>
-                                                    </ul>
+    
+                                    <!---->
+    
+                                    <li class="nav-item" x-data="{ activeDropdown: null, purchaseDropdown: null }">
+                                        <button
+                                            type="button"
+                                            class="group"
+                                            :class="{'active' : activeDropdown === 'purchase'}"
+                                            @click="togglePurchaseDropdown"
+                                        >
+                                            <div class="flex items-center">
                                                 
-                                                    <script>
-                                                        function toggleProductDropdown() {
-                                                            this.activeDropdown = this.activeDropdown === 'product' ? null : 'product';
-                                                            this.productDropdown = null;
-                                                        }
-                                                    </script>
-                                                </li>
+                                                <span class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">Purchase</span>
+                                            </div>
+                                            <div class="rtl:rotate-180" :class="{'!rotate-90' : activeDropdown === 'purchase'}">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9 5L15 12L9 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </button>
+                                        <ul x-cloak x-show="activeDropdown === 'purchase'" x-collapse class="sub-menu text-gray-500">
+                                            <li><a href="add-purchase.html">Add Purchase</a></li>
+                                            <li><a href="manage-purchase.html">Manage Purchase</a></li>
+                                        </ul>
+                                    
+                                        <script>
+                                            function togglePurchaseDropdown() {
+                                                this.activeDropdown = this.activeDropdown === 'purchase' ? null : 'purchase';
+                                                this.purchaseDropdown = null;
+                                            }
+                                        </script>
+                                    </li>
+                                    
+    
+                                    <!---->
+    
+                                    <li class="nav-item" x-data="{ activeDropdown: null, stockDropdown: null }">
+                                        <button
+                                            type="button"
+                                            class="group"
+                                            :class="{'active' : activeDropdown === 'stock'}"
+                                            @click="toggleStockDropdown"
+                                        >
+                                            <div class="flex items-center">
                                                 
-            
-                                                <!---->
-            
-                                                <li class="nav-item" x-data="{ activeDropdown: null, purchaseDropdown: null }">
-                                                    <button
-                                                        type="button"
-                                                        class="group"
-                                                        :class="{'active' : activeDropdown === 'purchase'}"
-                                                        @click="togglePurchaseDropdown"
-                                                    >
-                                                        <div class="flex items-center">
-                                                            
-                                                            <span class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">Purchase</span>
-                                                        </div>
-                                                        <div class="rtl:rotate-180" :class="{'!rotate-90' : activeDropdown === 'purchase'}">
-                                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M9 5L15 12L9 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                            </svg>
-                                                        </div>
-                                                    </button>
-                                                    <ul x-cloak x-show="activeDropdown === 'purchase'" x-collapse class="sub-menu text-gray-500">
-                                                        <li><a href="add-purchase.html">Add Purchase</a></li>
-                                                        <li><a href="manage-purchase.html">Manage Purchase</a></li>
-                                                    </ul>
-                                                
-                                                    <script>
-                                                        function togglePurchaseDropdown() {
-                                                            this.activeDropdown = this.activeDropdown === 'purchase' ? null : 'purchase';
-                                                            this.purchaseDropdown = null;
-                                                        }
-                                                    </script>
-                                                </li>
-                                                
-            
-                                                <!---->
-            
-                                                <li class="nav-item" x-data="{ activeDropdown: null, stockDropdown: null }">
-                                                    <button
-                                                        type="button"
-                                                        class="group"
-                                                        :class="{'active' : activeDropdown === 'stock'}"
-                                                        @click="toggleStockDropdown"
-                                                    >
-                                                        <div class="flex items-center">
-                                                            
-                                                            <span class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">Stock</span>
-                                                        </div>
-                                                        <div class="rtl:rotate-180" :class="{'!rotate-90' : activeDropdown === 'stock'}">
-                                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M9 5L15 12L9 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                            </svg>
-                                                        </div>
-                                                    </button>
-                                                    <ul x-cloak x-show="activeDropdown === 'stock'" x-collapse class="sub-menu text-gray-500">
-                                                        <li><a href="stock-report.html">Stock Report</a></li>
-                                                    </ul>
-                                                
-                                                    <script>
-                                                        function toggleStockDropdown() {
-                                                            this.activeDropdown = this.activeDropdown === 'stock' ? null : 'stock';
-                                                            this.stockDropdown = null;
-                                                        }
-                                                    </script>
-                                                </li>
-                                                
-            
-                                                <!---->
-                                                <li class="menu nav-item" x-data="{ activeDropdown: null, accountsDropdown: null, reportDropdown: null }">
-                                                    <button
-                                                        type="button"
-                                                        class="nav-link group"
-                                                        :class="{'active' : activeDropdown === 'accounts'}"
-                                                        @click="toggleAccountsDropdown"
-                                                    >
-                                                        <div class="flex items-center">
-                                                          
-                                                            <span class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">Accounts</span>
-                                                        </div>
-                                                        <div class="rtl:rotate-180" :class="{'!rotate-90' : activeDropdown === 'accounts'}">
-                                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path
-                                                                    d="M9 5L15 12L9 19"
-                                                                    stroke="currentColor"
-                                                                    stroke-width="1.5"
-                                                                    stroke-linecap="round"
-                                                                    stroke-linejoin="round"
-                                                                />
-                                                            </svg>
-                                                        </div>
-                                                    </button>
-                                                    <ul x-cloak x-show="activeDropdown === 'accounts'" x-collapse class="sub-menu text-gray-500">
-                                                        <li><a href="chart-of-account.html">Chart Of Account</a></li>
-                                                        <li><a href="sub-account-list.html">Sub Account List</a></li>
-                                                        <li><a href="predefined-accounts.html">Predefined Accounts</a></li>
-                                                        <li><a href="financial-year.html">Financial Year</a></li>
-                                                        <li><a href="opening-balance.html">Opening Balance</a></li>
-                                                        <li><a href="payment-voucher.html">Payment Voucher</a></li>
-                                                        <li><a href="receipt-voucher.html">Receipt Voucher</a></li>
-                                                        <li><a href="contra-voucher.html">Contra Voucher</a></li>
-                                                        <li><a href="journal-voucher.html">Journal Voucher</a></li>
-                                                        <li><a href="bank-reconciliation.html">Bank Reconciliation</a></li>
-                                                        <li><a href="add-payment-method.html">Add Payment Method</a></li>
-                                                        <li><a href="payment-method-list.html">Payment Method List</a></li>
-                                                        <li><a href="supplier-payment.html">Supplier Payment</a></li>
-                                                        <li><a href="customer-receive.html">Customer Receive</a></li>
-                                                        <li><a href="service-payment.html">Service Payment</a></li>
-                                                        <li><a href="cash-adjustment.html">Cash Adjustment</a></li>
-                                                        <li><a href="voucher-approval.html">Voucher Approval</a></li>
-                                                        <li class="menu" x-data="{ reportDropdown: null }">
-                                                            <button
-                                                                type="button"
-                                                                class="group"
-                                                                :class="{'active' : reportDropdown === 'reports'}"
-                                                                @click="toggleReportDropdown"
-                                                            >
-                                                                <div class="flex items-center">
-                                                                    <span class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">Report</span>
-                                                                </div>
-                                                                <div class="rtl:rotate-180" :class="{'!rotate-90' : reportDropdown === 'reports'}">
-                                                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path
-                                                                            d="M9 5L15 12L9 19"
-                                                                            stroke="currentColor"
-                                                                            stroke-width="1.5"
-                                                                            stroke-linecap="round"
-                                                                            stroke-linejoin="round"
-                                                                        />
-                                                                    </svg>
-                                                                </div>
-                                                            </button>
-                                                            <ul x-cloak x-show="reportDropdown === 'reports'" x-collapse class="sub-menu text-gray-500">
-                                                                <li><a href="cash-book.html">Cash Book</a></li>
-                                                                <li><a href="bank-book.html">Bank Book</a></li>
-                                                                <li><a href="day-book.html">Day Book</a></li>
-                                                                <li><a href="general-ledger.html">General Ledger</a></li>
-                                                                <li><a href="sub-ledger.html">Sub Ledger</a></li>
-                                                                <li><a href="trial-balance.html">Trial Balance</a></li>
-                                                                <li><a href="income-statement.html">Income Statement</a></li>
-                                                                <li><a href="expenditure-statement.html">Expenditure Statement</a></li>
-                                                                <li><a href="profit-loss.html">Profit Loss</a></li>
-                                                                <li><a href="balance-sheet.html">Balance Sheet</a></li>
-                                                                <li><a href="fixed-asset-schedule.html">Fixed Asset Schedule</a></li>
-                                                                <li><a href="receipt-payment.html">Receipt & Payment</a></li>
-                                                                <li><a href="bank-reconciliation-report.html">Bank Reconciliation Report</a></li>
-                                                                <li><a href="coa-point.html">Coa Point</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                
-                                                    <script>
-                                                        function toggleAccountsDropdown() {
-                                                            this.activeDropdown = this.activeDropdown === 'accounts' ? null : 'accounts';
-                                                            this.reportDropdown = null;
-                                                        }
-                                                
-                                                        function toggleReportDropdown() {
-                                                            this.reportDropdown = this.reportDropdown === 'reports' ? null : 'reports';
-                                                        }
-                                                    </script>
-                                                </li>
-                                                
-            
-                                                <!---->
-            
-                                                <li class="nav-item" x-data="{ activeDropdown: null, reportDropdown: null }">
-                                                    <button
-                                                        type="button"
-                                                        class="nav-link group"
-                                                        :class="{'active' : activeDropdown === 'report'}"
-                                                        @click="toggleReportDropdown"
-                                                    >
-                                                        <div class="flex items-center">
-                                                           
-                                                            <span class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">Report</span>
-                                                        </div>
-                                                        <div class="rtl:rotate-180" :class="{'!rotate-90' : activeDropdown === 'report'}">
-                                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path
-                                                                    d="M9 5L15 12L9 19"
-                                                                    stroke="currentColor"
-                                                                    stroke-width="1.5"
-                                                                    stroke-linecap="round"
-                                                                    stroke-linejoin="round"
-                                                                />
-                                                            </svg>
-                                                        </div>
-                                                    </button>
-                                                    <ul x-cloak x-show="activeDropdown === 'report'" x-collapse class="sub-menu text-gray-500">
-                                                        <li><a href="closing.html">Closing</a></li>
-                                                        <li><a href="closing-report.html">Closing Report</a></li>
-                                                        <li><a href="todays-customer-receipt.html">Todays Customer Receipt</a></li>
-                                                        <li><a href="sales-report.html">Sales Report</a></li>
-                                                        <li><a href="purchase-report.html">Purchase Report</a></li>
-                                                        <li><a href="user-wise-sales-report.html">User Wise Sales Report</a></li>
-                                                        <li><a href="customer-due-report.html">Customer Due Report</a></li>
-                                                        <li><a href="shipping-cost-report.html">Shipping Cost Report</a></li>
-                                                        <li><a href="purchase-report-category-wise.html">Purchase Report (Category Wise)</a></li>
-                                                        <li><a href="sales-report-category-wise.html">Sales Report (Category Wise)</a></li>
-                                                        <li><a href="sales-report-product-wise.html">Sales Report (Product Wise)</a></li>
-                                                        <li><a href="sales-return.html">Sales Return</a></li>
-                                                        <li><a href="supplier-return.html">Supplier Return</a></li>
-                                                        <li><a href="tax-report.html">TAX Report</a></li>
-                                                        <li><a href="profit-report-sale-wise.html">Profit Report (Sale Wise)</a></li>
-                                                    </ul>
-                                                
-                                                    <script>
-                                                        function toggleReportDropdown() {
-                                                            this.activeDropdown = this.activeDropdown === 'report' ? null : 'report';
-                                                        }
-                                                    </script>
-                                                </li>
-                                                
-                                        <!---->
-            
-                                        
-                                       
-                                        <!---->
-            
-                                       
-            
-                                        <li class="menu nav-item" x-data="{ activeDropdown: null }">
-                                            <button
-                                                type="button"
-                                                class="nav-link group"
-                                                :class="{'active' : activeDropdown === 'hr'}"
-                                                @click="activeDropdown === 'hr' ? activeDropdown = null : activeDropdown = 'hr'"
-                                            >
-                                                <div class="flex items-center">
-                                                    <span class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">Human Resource</span>
-                                                </div>
-                                                <div class="rtl:rotate-180" :class="{'!rotate-90' : activeDropdown === 'hr'}">
-                                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M9 5L15 12L9 19"
-                                                            stroke="currentColor"
-                                                            stroke-width="1.5"
-                                                            stroke-linecap="round"
-                                                            stroke-linejoin="round"
-                                                        />
-                                                    </svg>
-                                                </div>
-                                            </button>
-                                            <ul x-cloak x-show="activeDropdown === 'hr'" x-collapse class="sub-menu text-gray-500">
-                                                <li class="menu nav-item" x-data="{ hrmDropdown: null }">
-                                                    <button
-                                                        type="button"
-                                                        class="nav-link group"
-                                                        @click="hrmDropdown === 'hrm' ? hrmDropdown = null : hrmDropdown = 'hrm'"
-                                                    >
-                                                        <span>HRM</span>
-                                                        <div :class="{'!rotate-90' : hrmDropdown === 'hrm'}">
-                                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path
-                                                                    d="M9 5L15 12L9 19"
-                                                                    stroke="currentColor"
-                                                                    stroke-width="1.5"
-                                                                    stroke-linecap="round"
-                                                                    stroke-linejoin="round"
-                                                                />
-                                                            </svg>
-                                                        </div>
-                                                    </button>
-                                                    <ul x-cloak x-show="hrmDropdown === 'hrm'" x-collapse class="sub-menu text-gray-500">
-                                                        <li><a href="add-designation.html">Add Designation</a></li>
-                                                        <li><a href="manage-designation.html">Manage Designation</a></li>
-                                                        <li><a href="add-employee.html">Add Employee</a></li>
-                                                        <li><a href="manage-employee.html">Manage Employee</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu nav-item" x-data="{ attendanceDropdown: null }">
-                                                    <button
-                                                        type="button"
-                                                        class="nav-link group"
-                                                        @click="attendanceDropdown === 'attendance' ? attendanceDropdown = null : attendanceDropdown = 'attendance'"
-                                                    >
-                                                        <span>Attendance</span>
-                                                        <div :class="{'!rotate-90' : attendanceDropdown === 'attendance'}">
-                                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path
-                                                                    d="M9 5L15 12L9 19"
-                                                                    stroke="currentColor"
-                                                                    stroke-width="1.5"
-                                                                    stroke-linecap="round"
-                                                                    stroke-linejoin="round"
-                                                                />
-                                                            </svg>
-                                                        </div>
-                                                    </button>
-                                                    <ul x-cloak x-show="attendanceDropdown === 'attendance'" x-collapse class="sub-menu text-gray-500">
-                                                        <li><a href="attendance.html">Attendance</a></li>
-                                                        <li><a href="manage-attendance.html">Manage Attendance</a></li>
-                                                        <li><a href="attendance-report.html">Attendance Report</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu nav-item" x-data="{ payrollDropdown: null }">
-                                                    <button
-                                                        type="button"
-                                                        class="nav-link group"
-                                                        @click="payrollDropdown === 'payroll' ? payrollDropdown = null : payrollDropdown = 'payroll'"
-                                                    >
-                                                        <span>Payroll</span>
-                                                        <div :class="{'!rotate-90' : payrollDropdown === 'payroll'}">
-                                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path
-                                                                    d="M9 5L15 12L9 19"
-                                                                    stroke="currentColor"
-                                                                    stroke-width="1.5"
-                                                                    stroke-linecap="round"
-                                                                    stroke-linejoin="round"
-                                                                />
-                                                            </svg>
-                                                        </div>
-                                                    </button>
-                                                    <ul x-cloak x-show="payrollDropdown === 'payroll'" x-collapse class="sub-menu text-gray-500">
-                                                        <li><a href="salary-advance.html">Salary Advance</a></li>
-                                                        <li><a href="salary-generate.html">Salary Generate</a></li>
-                                                        <li><a href="manage-employee-salary.html">Manage Employee Salary</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        
-            
-                                        <!---->
-            
-                                        <li class="menu nav-item" x-data="{ activeDropdown: null }">
-                                            <button
-                                                type="button"
-                                                class="nav-link group"
-                                                :class="{'active' : activeDropdown === 'bank'}"
-                                                @click="activeDropdown === 'bank' ? activeDropdown = null : activeDropdown = 'bank'"
-                                            >
-                                                <div class="flex items-center">
-                                                    
-                                                    <span class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">Bank</span>
-                                                </div>
-                                                <div class="rtl:rotate-180" :class="{'!rotate-90' : activeDropdown === 'bank'}">
-                                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M9 5L15 12L9 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                    </svg>
-                                                </div>
-                                            </button>
-                                            <ul x-cloak x-show="activeDropdown === 'bank'" x-collapse class="sub-menu text-gray-500">
-                                                <li><a href="add-new-bank.html">Add New Bank</a></li>
-                                                <li><a href="manage-bank.html">Manage Bank</a></li>
-                                            </ul>
-                                        </li>
-                                        
-            
-                                        <!---->
-            
-                                        <li class="menu nav-item" x-data="{ activeDropdown: null }">
-                                            <button
-                                                type="button"
-                                                class="nav-link group"
-                                                :class="{'active' : activeDropdown === 'service'}"
-                                                @click="activeDropdown === 'service' ? activeDropdown = null : activeDropdown = 'service'"
-                                            >
-                                                <div class="flex items-center">
-                                                   
-                                                    <span class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">Service</span>
-                                                </div>
-                                                <div class="rtl:rotate-180" :class="{'!rotate-90' : activeDropdown === 'service'}">
-                                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M9 5L15 12L9 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                    </svg>
-                                                </div>
-                                            </button>
-                                            <ul x-cloak x-show="activeDropdown === 'service'" x-collapse class="sub-menu text-gray-500">
-                                                <li><a href="add-service.html">Add Service</a></li>
-                                                <li><a href="manage-service.html">Manage Service</a></li>
-                                                <li><a href="service-invoice.html">Service Invoice</a></li>
-                                                <li><a href="manage-service-invoice.html">Manage Service Invoice</a></li>
-                                            </ul>
-                                        </li>
-                                        
-            
-                                        <!---->
-            
-                                        <li class="menu nav-item" x-data="{ activeDropdown: null }">
-                                            <button
-                                                type="button"
-                                                class="nav-link group"
-                                                :class="{'active' : activeDropdown === 'tax'}"
-                                                @click="activeDropdown === 'tax' ? activeDropdown = null : activeDropdown = 'tax'"
-                                            >
-                                                <div class="flex items-center">
-                                                   
-                                                    <span class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">TAX</span>
-                                                </div>
-                                                <div class="rtl:rotate-180" :class="{'!rotate-90' : activeDropdown === 'tax'}">
-                                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M9 5L15 12L9 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                    </svg>
-                                                </div>
-                                            </button>
-                                            <ul x-cloak x-show="activeDropdown === 'tax'" x-collapse class="sub-menu text-gray-500">
-                                                <li><a href="vat-tax-setting.html">VAT & TAX Setting</a></li>
-                                                <li><a href="tax-settings.html">TAX Settings</a></li>
-                                            </ul>
-                                        </li>
-                                        
-            
-                                        <!---->
-            
-                                        <li class="menu nav-item" x-data="{ activeDropdown: null }">
-                                            <button
-                                                type="button"
-                                                class="nav-link group"
-                                                :class="{'active' : activeDropdown === 'return'}"
-                                                @click="activeDropdown === 'return' ? activeDropdown = null : activeDropdown = 'return'"
-                                            >
-                                                <div class="flex items-center">
-                                                    
-                                                    <span class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">Return</span>
-                                                </div>
-                                                <div class="rtl:rotate-180" :class="{'!rotate-90' : activeDropdown === 'return'}">
-                                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M9 5L15 12L9 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                    </svg>
-                                                </div>
-                                            </button>
-                                            <ul x-cloak x-show="activeDropdown === 'return'" x-collapse class="sub-menu text-gray-500">
-                                                <li><a href="return.html">Return</a></li>
-                                                <li><a href="stock-return-list.html">Stock Return List</a></li>
-                                                <li><a href="supplier-return-list.html">Supplier Return List</a></li>
-                                                <li><a href="wastage-return-list.html">Wastage Return List</a></li>
-                                            </ul>
-                                        </li>
+                                                <span class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">Stock</span>
+                                            </div>
+                                            <div class="rtl:rotate-180" :class="{'!rotate-90' : activeDropdown === 'stock'}">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9 5L15 12L9 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </button>
+                                        <ul x-cloak x-show="activeDropdown === 'stock'" x-collapse class="sub-menu text-gray-500">
+                                            <li><a href="stock-report.html">Stock Report</a></li>
+                                        </ul>
+                                    
+                                        <script>
+                                            function toggleStockDropdown() {
+                                                this.activeDropdown = this.activeDropdown === 'stock' ? null : 'stock';
+                                                this.stockDropdown = null;
+                                            }
+                                        </script>
+                                    </li>
+                                    
+    
+                                    <!---->
+                                    <li class="menu nav-item" x-data="{ activeDropdown: null, accountsDropdown: null, reportDropdown: null }">
+                                        <button
+                                            type="button"
+                                            class="nav-link group"
+                                            :class="{'active' : activeDropdown === 'accounts'}"
+                                            @click="toggleAccountsDropdown"
+                                        >
+                                            <div class="flex items-center">
+                                              
+                                                <span class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">Accounts</span>
+                                            </div>
+                                            <div class="rtl:rotate-180" :class="{'!rotate-90' : activeDropdown === 'accounts'}">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9 5L15 12L9 19"
+                                                        stroke="currentColor"
+                                                        stroke-width="1.5"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                </svg>
+                                            </div>
+                                        </button>
+                                        <ul x-cloak x-show="activeDropdown === 'accounts'" x-collapse class="sub-menu text-gray-500">
+                                            <li><a href="chart.of.acc.html">Chart Of Account</a></li>
+                                            <li><a href="subaccount-list.html">Sub Account List</a></li>
+                                            <li><a href="predefined-accounts.html">Predefined Accounts</a></li>
+                                            <li><a href="financial-year.html">Financial Year</a></li>
+                                            <li><a href="opening-balance.html">Opening Balance</a></li>
+                                            <li><a href="payment-voucher.html">Payment Voucher</a></li>
+                                            <li><a href="reciept-voucher.html">Receipt Voucher</a></li>
+                                            <li><a href="contra-voucher.html">Contra Voucher</a></li>
+                                            <li><a href="journal-voucher.hml">Journal Voucher</a></li>
+                                            <li><a href="bank-reconciliation.html">Bank Reconciliation</a></li>
+                                            <li><a href="add-payment-method.html">Add Payment Method</a></li>
+                                            <li><a href="add-payment-method.html">Payment Method List</a></li>
+                                            <li><a href="supplier-paymet.html">Supplier Payment</a></li>
+                                            <li><a href="customer-receiver.html">Customer Receive</a></li>
+                                            <li><a href="service-paymet.html">Service Payment</a></li>
+                                            <li><a href="cash-adjustment.html">Cash Adjustment</a></li>
+                                            <li><a href="#">Voucher Approval</a></li>
+                                            <li class="menu" x-data="{ reportDropdown: null }">
+                                                <button
+                                                    type="button"
+                                                    class="group"
+                                                    :class="{'active' : reportDropdown === 'reports'}"
+                                                    @click="toggleReportDropdown"
+                                                >
+                                                    <div class="flex items-center">
+                                                        <span class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">Report</span>
+                                                    </div>
+                                                    <div class="rtl:rotate-180" :class="{'!rotate-90' : reportDropdown === 'reports'}">
+                                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M9 5L15 12L9 19"
+                                                                stroke="currentColor"
+                                                                stroke-width="1.5"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                            />
+                                                        </svg>
+                                                    </div>
+                                                </button>
+                                                <ul x-cloak x-show="reportDropdown === 'reports'" x-collapse class="sub-menu text-gray-500">
+                                                    <li><a href="cashook.html">Cash Book</a></li>
+                                                    <li><a href="bankbook.html">Bank Book</a></li>
+                                                    <li><a href="daybook.html">Day Book</a></li>
+                                                    <li><a href="general-ledger.html">General Ledger</a></li>
+                                                    <li><a href="sub-ledger.html">Sub Ledger</a></li>
+                                                    <li><a href="trial-balance.html">Trial Balance</a></li>
+                                                    <li><a href="income-statement.html">Income Statement</a></li>
+                                                    <li><a href="expenditure-statement.html">Expenditure Statement</a></li>
+                                                    <li><a href="profit-loss.html">Profit Loss</a></li>
+                                                    <li><a href="balance-sheet.html">Balance Sheet</a></li>
+                                                    <li><a href="fixed-asset-schedule.html">Fixed Asset Schedule</a></li>
+                                                    <li><a href="receipt-payment.html">Receipt & Payment</a></li>
+                                                    <li><a href="bank-recou-report.html">Bank Reconciliation Report</a></li>
+                                                    <li><a href="coa-print.html">Coa Point</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    
+                                        <script>
+                                            function toggleAccountsDropdown() {
+                                                this.activeDropdown = this.activeDropdown === 'accounts' ? null : 'accounts';
+                                                this.reportDropdown = null;
+                                            }
+                                    
+                                            function toggleReportDropdown() {
+                                                this.reportDropdown = this.reportDropdown === 'reports' ? null : 'reports';
+                                            }
+                                        </script>
+                                    </li>
+                                    
+    
+                                    <!---->
+    
+                                    <li class="nav-item" x-data="{ activeDropdown: null, reportDropdown: null }">
+                                        <button
+                                            type="button"
+                                            class="nav-link group"
+                                            :class="{'active' : activeDropdown === 'report'}"
+                                            @click="toggleReportDropdown"
+                                        >
+                                            <div class="flex items-center">
+                                               
+                                                <span class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">Report</span>
+                                            </div>
+                                            <div class="rtl:rotate-180" :class="{'!rotate-90' : activeDropdown === 'report'}">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9 5L15 12L9 19"
+                                                        stroke="currentColor"
+                                                        stroke-width="1.5"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                </svg>
+                                            </div>
+                                        </button>
+                                        <ul x-cloak x-show="activeDropdown === 'report'" x-collapse class="sub-menu text-gray-500">
+                                            <li><a href="closing.html">Closing</a></li>
+                                            <li><a href="closing-report.html">Closing Report</a></li>
+                                            <li><a href="todays-customer-report.html">Todays Customer Receipt</a></li>
+                                            <li><a href="sales-report.html">Sales Report</a></li>
+                                            <li><a href="purches-report.html">Purchase Report</a></li>
+                                            <li><a href="user-wise-sales-report.html">User Wise Sales Report</a></li>
+                                            <li><a href="customer-due-report.html">Customer Due Report</a></li>
+                                            <li><a href="shipping-cost-report.html">Shipping Cost Report</a></li>
+                                            <li><a href="category-wise-purchaes-report.html">Purchase Report (Category Wise)</a></li>
+                                            <li><a href="category-wise-sales-report.html">Sales Report (Category Wise)</a></li>
+                                            <li><a href="sales-report.html">Sales Report (Product Wise)</a></li>
+                                            <li><a href="sales-return-report.html">Sales Return</a></li>
+                                            <li><a href="suplier-return-report.html">Supplier Return</a></li>
+                                            <li><a href="tax-report.html">TAX Report</a></li>
+                                            <li><a href="profit-report.html">Profit Report (Sale Wise)</a></li>
+                                        </ul>
+                                    
+                                        <script>
+                                            function toggleReportDropdown() {
+                                                this.activeDropdown = this.activeDropdown === 'report' ? null : 'report';
+                                            }
+                                        </script>
+                                    </li>
+                                    
+                            <!---->
+    
+                            
+                           
+                            <!---->
+    
+                           
+    
+                            <li class="menu nav-item" x-data="{ activeDropdown: null }">
+                                <button
+                                    type="button"
+                                    class="nav-link group"
+                                    :class="{'active' : activeDropdown === 'hr'}"
+                                    @click="activeDropdown === 'hr' ? activeDropdown = null : activeDropdown = 'hr'"
+                                >
+                                    <div class="flex items-center">
+                                        <span class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">Human Resource</span>
                                     </div>
-                                </nav>
-                            </div>
-                        <!-- end sidebar section -->
-            
+                                    <div class="rtl:rotate-180" :class="{'!rotate-90' : activeDropdown === 'hr'}">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9 5L15 12L9 19"
+                                                stroke="currentColor"
+                                                stroke-width="1.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                    </div>
+                                </button>
+                                <ul x-cloak x-show="activeDropdown === 'hr'" x-collapse class="sub-menu text-gray-500">
+                                    <li class="menu nav-item" x-data="{ hrmDropdown: null }">
+                                        <button
+                                            type="button"
+                                            class="nav-link group"
+                                            @click="hrmDropdown === 'hrm' ? hrmDropdown = null : hrmDropdown = 'hrm'"
+                                        >
+                                            <span>HRM</span>
+                                            <div :class="{'!rotate-90' : hrmDropdown === 'hrm'}">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9 5L15 12L9 19"
+                                                        stroke="currentColor"
+                                                        stroke-width="1.5"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                </svg>
+                                            </div>
+                                        </button>
+                                        <ul x-cloak x-show="hrmDropdown === 'hrm'" x-collapse class="sub-menu text-gray-500">
+                                            <li><a href="add-designation.html">Add Designation</a></li>
+                                            <li><a href="manage-designation.html">Manage Designation</a></li>
+                                            <li><a href="add-employee.html">Add Employee</a></li>
+                                            <li><a href="manage-employee.html">Manage Employee</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu nav-item" x-data="{ attendanceDropdown: null }">
+                                        <button
+                                            type="button"
+                                            class="nav-link group"
+                                            @click="attendanceDropdown === 'attendance' ? attendanceDropdown = null : attendanceDropdown = 'attendance'"
+                                        >
+                                            <span>Attendance</span>
+                                            <div :class="{'!rotate-90' : attendanceDropdown === 'attendance'}">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9 5L15 12L9 19"
+                                                        stroke="currentColor"
+                                                        stroke-width="1.5"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                </svg>
+                                            </div>
+                                        </button>
+                                        <ul x-cloak x-show="attendanceDropdown === 'attendance'" x-collapse class="sub-menu text-gray-500">
+                                            <li><a href="#">Attendance</a></li>
+                                            <li><a href="#">Manage Attendance</a></li>
+                                            <li><a href="attendance-report.html">Attendance Report</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu nav-item" x-data="{ payrollDropdown: null }">
+                                        <button
+                                            type="button"
+                                            class="nav-link group"
+                                            @click="payrollDropdown === 'payroll' ? payrollDropdown = null : payrollDropdown = 'payroll'"
+                                        >
+                                            <span>Payroll</span>
+                                            <div :class="{'!rotate-90' : payrollDropdown === 'payroll'}">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9 5L15 12L9 19"
+                                                        stroke="currentColor"
+                                                        stroke-width="1.5"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                </svg>
+                                            </div>
+                                        </button>
+                                        <ul x-cloak x-show="payrollDropdown === 'payroll'" x-collapse class="sub-menu text-gray-500">
+                                            <li><a href="salary-advance.html">Salary Advance</a></li>
+                                            <li><a href="salary-generate.html">Salary Generate</a></li>
+                                            <li><a href="manage-employee-salary.html">Manage Employee Salary</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+    
+                            <!---->
+    
+                            <li class="menu nav-item" x-data="{ activeDropdown: null }">
+                                <button
+                                    type="button"
+                                    class="nav-link group"
+                                    :class="{'active' : activeDropdown === 'bank'}"
+                                    @click="activeDropdown === 'bank' ? activeDropdown = null : activeDropdown = 'bank'"
+                                >
+                                    <div class="flex items-center">
+                                        
+                                        <span class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">Bank</span>
+                                    </div>
+                                    <div class="rtl:rotate-180" :class="{'!rotate-90' : activeDropdown === 'bank'}">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 5L15 12L9 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </button>
+                                <ul x-cloak x-show="activeDropdown === 'bank'" x-collapse class="sub-menu text-gray-500">
+                                    <li><a href="add-bank.html">Add New Bank</a></li>
+                                    <li><a href="#">Manage Bank</a></li>
+                                </ul>
+                            </li>
+                            
+    
+                            <!---->
+    
+                            <li class="menu nav-item" x-data="{ activeDropdown: null }">
+                                <button
+                                    type="button"
+                                    class="nav-link group"
+                                    :class="{'active' : activeDropdown === 'service'}"
+                                    @click="activeDropdown === 'service' ? activeDropdown = null : activeDropdown = 'service'"
+                                >
+                                    <div class="flex items-center">
+                                       
+                                        <span class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">Service</span>
+                                    </div>
+                                    <div class="rtl:rotate-180" :class="{'!rotate-90' : activeDropdown === 'service'}">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 5L15 12L9 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </button>
+                                <ul x-cloak x-show="activeDropdown === 'service'" x-collapse class="sub-menu text-gray-500">
+                                    <li><a href="add-service.html">Add Service</a></li>
+                                    <li><a href="manage-service.html">Manage Service</a></li>
+                                    <li><a href="service-invoice.html">Service Invoice</a></li>
+                                    <li><a href="manage-service-invoice.html">Manage Service Invoice</a></li>
+                                </ul>
+                            </li>
+                            
+    
+                            <!---->
+    
+                            <li class="menu nav-item" x-data="{ activeDropdown: null }">
+                                <button
+                                    type="button"
+                                    class="nav-link group"
+                                    :class="{'active' : activeDropdown === 'tax'}"
+                                    @click="activeDropdown === 'tax' ? activeDropdown = null : activeDropdown = 'tax'"
+                                >
+                                    <div class="flex items-center">
+                                       
+                                        <span class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">TAX</span>
+                                    </div>
+                                    <div class="rtl:rotate-180" :class="{'!rotate-90' : activeDropdown === 'tax'}">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 5L15 12L9 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </button>
+                                <ul x-cloak x-show="activeDropdown === 'tax'" x-collapse class="sub-menu text-gray-500">
+                                    <li><a href="vatandtaxsetting.html">VAT & TAX Setting</a></li>
+                                    <li><a href="#">TAX Settings</a></li>
+                                </ul>
+                            </li>
+                            
+    
+                            <!---->
+    
+                            <li class="menu nav-item" x-data="{ activeDropdown: null }">
+                                <button
+                                    type="button"
+                                    class="nav-link group"
+                                    :class="{'active' : activeDropdown === 'return'}"
+                                    @click="activeDropdown === 'return' ? activeDropdown = null : activeDropdown = 'return'"
+                                >
+                                    <div class="flex items-center">
+                                        
+                                        <span class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">Return</span>
+                                    </div>
+                                    <div class="rtl:rotate-180" :class="{'!rotate-90' : activeDropdown === 'return'}">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 5L15 12L9 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </button>
+                                <ul x-cloak x-show="activeDropdown === 'return'" x-collapse class="sub-menu text-gray-500">
+                                    <li><a href="return-list.html">Return</a></li>
+                                    <li><a href="stock-return-list.html">Stock Return List</a></li>
+                                    <li><a href="suppier-return-list.html">Supplier Return List</a></li>
+                                    <li><a href="wastege-return-list.html">Wastage Return List</a></li>
+                                </ul>
+                            </li>
+                        </div>
+                    </nav>
+                </div>
+            <!-- end sidebar section -->
+
             <div class="main-content flex min-h-screen flex-col">
                 <!-- start header section -->
                 <header class="z-40" :class="{'dark' : $store.app.semidark && $store.app.menu === 'horizontal'}">

@@ -12,6 +12,7 @@
         <link rel="stylesheet" type="text/css" media="screen" href="assets/css/perfect-scrollbar.min.css" />
         <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
         <link defer rel="stylesheet" type="text/css" media="screen" href="assets/css/animate.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="assets/js/perfect-scrollbar.min.js"></script>
         <script defer src="assets/js/popper.min.js"></script>
         <script defer src="assets/js/tippy-bundle.umd.min.js"></script>
@@ -426,9 +427,9 @@
                             </a>
                         </li>
                         
-
+    
                             <!---->
-
+    
                             <h2 class="-mx-4 mb-1 flex items-center bg-white-light/30 px-7 py-3 font-extrabold uppercase dark:bg-dark dark:bg-opacity-[0.08]">
                                 <svg
                                     class="hidden h-5 w-4 flex-none"
@@ -443,7 +444,7 @@
                                 </svg>
                                 
                             </h2>
-
+    
                             <li class="menu nav-item" x-data="{ activeDropdown: null, quotationDropdown: null }">
                                 <button
                                     type="button"
@@ -521,8 +522,8 @@
                                     </div>
                                 </button>
                                 <ul x-cloak x-show="activeDropdown === 'customer'" x-collapse class="sub-menu text-gray-500">
-                                    <li><a href="https://buraq.smartaccount.online/add_customer">Add Customer</a></li>
-                                    <li><a href="https://buraq.smartaccount.online/customer_list">Customer List</a></li>
+                                    <li><a href="add-customer.html">Add Customer</a></li>
+                                    <li><a href="customer-list.html">Customer List</a></li>
                                 </ul>
                             
                                 <script>
@@ -552,8 +553,8 @@
                                 </div>
                             </button>
                             <ul x-cloak x-show="activeDropdown === 'supplier'" x-collapse class="sub-menu text-gray-500">
-                                <li><a href="https://buraq.smartaccount.online/add_supplier">Add Supplier</a></li>
-                                <li><a href="https://buraq.smartaccount.online/supplier_list">Supplier List</a></li>
+                                <li><a href="add-supplier.html">Add Supplier</a></li>
+                                <li><a href="supplier-list.html">Supplier List</a></li>
                             </ul>
                         
                             <script>
@@ -564,9 +565,9 @@
                             </script>
                         </li>
                         
-
+    
                                     <!---->
-
+    
                                     <li class="nav-item" x-data="{ activeDropdown: null, productDropdown: null }">
                                         <button
                                             type="button"
@@ -585,13 +586,13 @@
                                             </div>
                                         </button>
                                         <ul x-cloak x-show="activeDropdown === 'product'" x-collapse class="sub-menu text-gray-500">
-                                            <li><a href="https://buraq.smartaccount.online/category_form">Add Category</a></li>
-                                            <li><a href="https://buraq.smartaccount.online/category_list">Category List</a></li>
-                                            <li><a href="https://buraq.smartaccount.online/unit_form">Add Unit</a></li>
-                                            <li><a href="https://buraq.smartaccount.online/unit_list">Unit List</a></li>
-                                            <li><a href="https://buraq.smartaccount.online/product_form">Add Product</a></li>
-                                            <li><a href="https://buraq.smartaccount.online/bulk_products">Add Product (CSV)</a></li>
-                                            <li><a href="https://buraq.smartaccount.online/product_list">Manage Product</a></li>
+                                            <li><a href="add-category.html">Add Category</a></li>
+                                            <li><a href="category.html">Category List</a></li>
+                                            <li><a href="add-unit.html">Add Unit</a></li>
+                                            <li><a href="add-unit.html">Unit List</a></li>
+                                            <li><a href="add-product.html">Add Product</a></li>
+                                            <li><a href="add-product-csv.html">Add Product (CSV)</a></li>
+                                            <li><a href="manage-product.html">Manage Product</a></li>
                                         </ul>
                                     
                                         <script>
@@ -602,9 +603,9 @@
                                         </script>
                                     </li>
                                     
-
+    
                                     <!---->
-
+    
                                     <li class="nav-item" x-data="{ activeDropdown: null, purchaseDropdown: null }">
                                         <button
                                             type="button"
@@ -623,8 +624,8 @@
                                             </div>
                                         </button>
                                         <ul x-cloak x-show="activeDropdown === 'purchase'" x-collapse class="sub-menu text-gray-500">
-                                            <li><a href="https://buraq.smartaccount.online/add_purchase">Add Purchase</a></li>
-                                            <li><a href="https://buraq.smartaccount.online/purchase_list">Manage Purchase</a></li>
+                                            <li><a href="add-purchase.html">Add Purchase</a></li>
+                                            <li><a href="manage-purchase.html">Manage Purchase</a></li>
                                         </ul>
                                     
                                         <script>
@@ -635,9 +636,9 @@
                                         </script>
                                     </li>
                                     
-
+    
                                     <!---->
-
+    
                                     <li class="nav-item" x-data="{ activeDropdown: null, stockDropdown: null }">
                                         <button
                                             type="button"
@@ -656,7 +657,7 @@
                                             </div>
                                         </button>
                                         <ul x-cloak x-show="activeDropdown === 'stock'" x-collapse class="sub-menu text-gray-500">
-                                            <li><a href="https://buraq.smartaccount.online/stock">Stock Report</a></li>
+                                            <li><a href="stock-report.html">Stock Report</a></li>
                                         </ul>
                                     
                                         <script>
@@ -667,7 +668,7 @@
                                         </script>
                                     </li>
                                     
-
+    
                                     <!---->
                                     <li class="menu nav-item" x-data="{ activeDropdown: null, accountsDropdown: null, reportDropdown: null }">
                                         <button
@@ -693,22 +694,22 @@
                                             </div>
                                         </button>
                                         <ul x-cloak x-show="activeDropdown === 'accounts'" x-collapse class="sub-menu text-gray-500">
-                                            <li><a href="#">Chart Of Account</a></li>
-                                            <li><a href="#">Sub Account List</a></li>
-                                            <li><a href="#">Predefined Accounts</a></li>
-                                            <li><a href="#">Financial Year</a></li>
-                                            <li><a href="#">Opening Balance</a></li>
-                                            <li><a href="#">Payment Voucher</a></li>
-                                            <li><a href="#">Receipt Voucher</a></li>
-                                            <li><a href="#">Contra Voucher</a></li>
-                                            <li><a href="#">Journal Voucher</a></li>
-                                            <li><a href="#">Bank Reconciliation</a></li>
-                                            <li><a href="#">Add Payment Method</a></li>
-                                            <li><a href="#">Payment Method List</a></li>
-                                            <li><a href="#">Supplier Payment</a></li>
-                                            <li><a href="#">Customer Receive</a></li>
-                                            <li><a href="#">Service Payment</a></li>
-                                            <li><a href="#">Cash Adjustment</a></li>
+                                            <li><a href="chart.of.acc.html">Chart Of Account</a></li>
+                                            <li><a href="subaccount-list.html">Sub Account List</a></li>
+                                            <li><a href="predefined-accounts.html">Predefined Accounts</a></li>
+                                            <li><a href="financial-year.html">Financial Year</a></li>
+                                            <li><a href="opening-balance.html">Opening Balance</a></li>
+                                            <li><a href="payment-voucher.html">Payment Voucher</a></li>
+                                            <li><a href="reciept-voucher.html">Receipt Voucher</a></li>
+                                            <li><a href="contra-voucher.html">Contra Voucher</a></li>
+                                            <li><a href="journal-voucher.hml">Journal Voucher</a></li>
+                                            <li><a href="bank-reconciliation.html">Bank Reconciliation</a></li>
+                                            <li><a href="add-payment-method.html">Add Payment Method</a></li>
+                                            <li><a href="add-payment-method.html">Payment Method List</a></li>
+                                            <li><a href="supplier-paymet.html">Supplier Payment</a></li>
+                                            <li><a href="customer-receiver.html">Customer Receive</a></li>
+                                            <li><a href="service-paymet.html">Service Payment</a></li>
+                                            <li><a href="cash-adjustment.html">Cash Adjustment</a></li>
                                             <li><a href="#">Voucher Approval</a></li>
                                             <li class="menu" x-data="{ reportDropdown: null }">
                                                 <button
@@ -733,20 +734,20 @@
                                                     </div>
                                                 </button>
                                                 <ul x-cloak x-show="reportDropdown === 'reports'" x-collapse class="sub-menu text-gray-500">
-                                                    <li><a href="#">Cash Book</a></li>
-                                                    <li><a href="#">Bank Book</a></li>
-                                                    <li><a href="#">Day Book</a></li>
-                                                    <li><a href="#">General Ledger</a></li>
-                                                    <li><a href="#">Sub Ledger</a></li>
-                                                    <li><a href="#">Trial Balance</a></li>
-                                                    <li><a href="#">Income Statement</a></li>
-                                                    <li><a href="#">Expenditure Statement</a></li>
-                                                    <li><a href="#">Profit Loss</a></li>
-                                                    <li><a href="#">Balance Sheet</a></li>
-                                                    <li><a href="#">Fixed Asset Schedule</a></li>
-                                                    <li><a href="#">Receipt & Payment</a></li>
-                                                    <li><a href="#">Bank Reconciliation Report</a></li>
-                                                    <li><a href="#">Coa Point</a></li>
+                                                    <li><a href="cashook.html">Cash Book</a></li>
+                                                    <li><a href="bankbook.html">Bank Book</a></li>
+                                                    <li><a href="daybook.html">Day Book</a></li>
+                                                    <li><a href="general-ledger.html">General Ledger</a></li>
+                                                    <li><a href="sub-ledger.html">Sub Ledger</a></li>
+                                                    <li><a href="trial-balance.html">Trial Balance</a></li>
+                                                    <li><a href="income-statement.html">Income Statement</a></li>
+                                                    <li><a href="expenditure-statement.html">Expenditure Statement</a></li>
+                                                    <li><a href="profit-loss.html">Profit Loss</a></li>
+                                                    <li><a href="balance-sheet.html">Balance Sheet</a></li>
+                                                    <li><a href="fixed-asset-schedule.html">Fixed Asset Schedule</a></li>
+                                                    <li><a href="receipt-payment.html">Receipt & Payment</a></li>
+                                                    <li><a href="bank-recou-report.html">Bank Reconciliation Report</a></li>
+                                                    <li><a href="coa-print.html">Coa Point</a></li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -763,9 +764,9 @@
                                         </script>
                                     </li>
                                     
-
+    
                                     <!---->
-
+    
                                     <li class="nav-item" x-data="{ activeDropdown: null, reportDropdown: null }">
                                         <button
                                             type="button"
@@ -790,21 +791,21 @@
                                             </div>
                                         </button>
                                         <ul x-cloak x-show="activeDropdown === 'report'" x-collapse class="sub-menu text-gray-500">
-                                            <li><a href="#">Closing</a></li>
-                                            <li><a href="#">Closing Report</a></li>
-                                            <li><a href="#">Todays Customer Receipt</a></li>
-                                            <li><a href="#">Sales Report</a></li>
-                                            <li><a href="#">Purchase Report</a></li>
-                                            <li><a href="#">User Wise Sales Report</a></li>
-                                            <li><a href="#">Customer Due Report</a></li>
-                                            <li><a href="#">Shipping Cost Report</a></li>
-                                            <li><a href="#">Purchase Report (Category Wise)</a></li>
-                                            <li><a href="#">Sales Report (Category Wise)</a></li>
-                                            <li><a href="#">Sales Report (Product Wise)</a></li>
-                                            <li><a href="#">Sales Return</a></li>
-                                            <li><a href="#">Supplier Return</a></li>
-                                            <li><a href="#">TAX Report</a></li>
-                                            <li><a href="#">Profit Report (Sale Wise)</a></li>
+                                            <li><a href="closing.html">Closing</a></li>
+                                            <li><a href="closing-report.html">Closing Report</a></li>
+                                            <li><a href="todays-customer-report.html">Todays Customer Receipt</a></li>
+                                            <li><a href="sales-report.html">Sales Report</a></li>
+                                            <li><a href="purches-report.html">Purchase Report</a></li>
+                                            <li><a href="user-wise-sales-report.html">User Wise Sales Report</a></li>
+                                            <li><a href="customer-due-report.html">Customer Due Report</a></li>
+                                            <li><a href="shipping-cost-report.html">Shipping Cost Report</a></li>
+                                            <li><a href="category-wise-purchaes-report.html">Purchase Report (Category Wise)</a></li>
+                                            <li><a href="category-wise-sales-report.html">Sales Report (Category Wise)</a></li>
+                                            <li><a href="sales-report.html">Sales Report (Product Wise)</a></li>
+                                            <li><a href="sales-return-report.html">Sales Return</a></li>
+                                            <li><a href="suplier-return-report.html">Supplier Return</a></li>
+                                            <li><a href="tax-report.html">TAX Report</a></li>
+                                            <li><a href="profit-report.html">Profit Report (Sale Wise)</a></li>
                                         </ul>
                                     
                                         <script>
@@ -815,13 +816,13 @@
                                     </li>
                                     
                             <!---->
-
+    
                             
                            
                             <!---->
-
+    
                            
-
+    
                             <li class="menu nav-item" x-data="{ activeDropdown: null }">
                                 <button
                                     type="button"
@@ -865,10 +866,10 @@
                                             </div>
                                         </button>
                                         <ul x-cloak x-show="hrmDropdown === 'hrm'" x-collapse class="sub-menu text-gray-500">
-                                            <li><a href="#">Add Designation</a></li>
-                                            <li><a href="#">Manage Designation</a></li>
-                                            <li><a href="#">Add Employee</a></li>
-                                            <li><a href="#">Manage Employee</a></li>
+                                            <li><a href="add-designation.html">Add Designation</a></li>
+                                            <li><a href="manage-designation.html">Manage Designation</a></li>
+                                            <li><a href="add-employee.html">Add Employee</a></li>
+                                            <li><a href="manage-employee.html">Manage Employee</a></li>
                                         </ul>
                                     </li>
                                     <li class="menu nav-item" x-data="{ attendanceDropdown: null }">
@@ -893,7 +894,7 @@
                                         <ul x-cloak x-show="attendanceDropdown === 'attendance'" x-collapse class="sub-menu text-gray-500">
                                             <li><a href="#">Attendance</a></li>
                                             <li><a href="#">Manage Attendance</a></li>
-                                            <li><a href="#">Attendance Report</a></li>
+                                            <li><a href="attendance-report.html">Attendance Report</a></li>
                                         </ul>
                                     </li>
                                     <li class="menu nav-item" x-data="{ payrollDropdown: null }">
@@ -916,17 +917,17 @@
                                             </div>
                                         </button>
                                         <ul x-cloak x-show="payrollDropdown === 'payroll'" x-collapse class="sub-menu text-gray-500">
-                                            <li><a href="#">Salary Advance</a></li>
-                                            <li><a href="#">Salary Generate</a></li>
-                                            <li><a href="#">Manage Employee Salary</a></li>
+                                            <li><a href="salary-advance.html">Salary Advance</a></li>
+                                            <li><a href="salary-generate.html">Salary Generate</a></li>
+                                            <li><a href="manage-employee-salary.html">Manage Employee Salary</a></li>
                                         </ul>
                                     </li>
                                 </ul>
                             </li>
                             
-
+    
                             <!---->
-
+    
                             <li class="menu nav-item" x-data="{ activeDropdown: null }">
                                 <button
                                     type="button"
@@ -945,14 +946,14 @@
                                     </div>
                                 </button>
                                 <ul x-cloak x-show="activeDropdown === 'bank'" x-collapse class="sub-menu text-gray-500">
-                                    <li><a href="#">Add New Bank</a></li>
+                                    <li><a href="add-bank.html">Add New Bank</a></li>
                                     <li><a href="#">Manage Bank</a></li>
                                 </ul>
                             </li>
                             
-
+    
                             <!---->
-
+    
                             <li class="menu nav-item" x-data="{ activeDropdown: null }">
                                 <button
                                     type="button"
@@ -971,16 +972,16 @@
                                     </div>
                                 </button>
                                 <ul x-cloak x-show="activeDropdown === 'service'" x-collapse class="sub-menu text-gray-500">
-                                    <li><a href="#">Add Service</a></li>
-                                    <li><a href="#">Manage Service</a></li>
-                                    <li><a href="#">Service Invoice</a></li>
-                                    <li><a href="#">Manage Service Invoice</a></li>
+                                    <li><a href="add-service.html">Add Service</a></li>
+                                    <li><a href="manage-service.html">Manage Service</a></li>
+                                    <li><a href="service-invoice.html">Service Invoice</a></li>
+                                    <li><a href="manage-service-invoice.html">Manage Service Invoice</a></li>
                                 </ul>
                             </li>
                             
-
+    
                             <!---->
-
+    
                             <li class="menu nav-item" x-data="{ activeDropdown: null }">
                                 <button
                                     type="button"
@@ -999,14 +1000,14 @@
                                     </div>
                                 </button>
                                 <ul x-cloak x-show="activeDropdown === 'tax'" x-collapse class="sub-menu text-gray-500">
-                                    <li><a href="#">VAT & TAX Setting</a></li>
+                                    <li><a href="vatandtaxsetting.html">VAT & TAX Setting</a></li>
                                     <li><a href="#">TAX Settings</a></li>
                                 </ul>
                             </li>
                             
-
+    
                             <!---->
-
+    
                             <li class="menu nav-item" x-data="{ activeDropdown: null }">
                                 <button
                                     type="button"
@@ -1025,10 +1026,10 @@
                                     </div>
                                 </button>
                                 <ul x-cloak x-show="activeDropdown === 'return'" x-collapse class="sub-menu text-gray-500">
-                                    <li><a href="#">Return</a></li>
-                                    <li><a href="#">Stock Return List</a></li>
-                                    <li><a href="#">Supplier Return List</a></li>
-                                    <li><a href="#">Wastage Return List</a></li>
+                                    <li><a href="return-list.html">Return</a></li>
+                                    <li><a href="stock-return-list.html">Stock Return List</a></li>
+                                    <li><a href="suppier-return-list.html">Supplier Return List</a></li>
+                                    <li><a href="wastege-return-list.html">Wastage Return List</a></li>
                                 </ul>
                             </li>
                         </div>
@@ -2451,35 +2452,434 @@
                     </div>
                 </header>-->
                 <!-- end header section -->
-                
+
                 <div class="animate__animated p-6" :class="[$store.app.animation]">
                     <!-- start main content section -->
-                    <div x-data="exportTable">
-                       
-                            
-                            
-                        
-                    </div>
-                </div>
-                
-                
-                
-                
-                <div class="animate__animated p-6" :class="[$store.app.animation]">
-                    <!-- start main content section -->
-                    <div x-data="exportTable">
-                        
-                            
-                            
-                        </div>
-                        <div class="panel mt-6">
-                            <div class="md:absolute md:top-5 ltr:md:left-5 rtl:md:right-5">
-                                <div class="mb-5 flex flex-wrap items-center">
-                                   
+
+                    <div x-data="contacts">
+                        <div class="flex flex-wrap items-center justify-between gap-4">
+                            <h2 class="text-xl">Supplier List</h2>
+                            <div class="flex w-full flex-col gap-4 sm:w-auto sm:flex-row sm:items-center sm:gap-3">
+                                <div class="flex gap-3">
+                                    <div>
+                                       
+                                        <div class="fixed inset-0 z-[999] hidden overflow-y-auto bg-[black]/60" :class="addContactModal && '!block'">
+                                            <div class="flex min-h-screen items-center justify-center px-4" @click.self="addContactModal = false">
+                                                <div
+                                                    x-show="addContactModal"
+                                                    x-transition
+                                                    x-transition.duration.300
+                                                    class="panel my-8 w-[90%] max-w-lg overflow-hidden rounded-lg border-0 p-0 md:w-full"
+                                                >
+                                                    <button
+                                                        type="button"
+                                                        class="absolute top-4 text-white-dark hover:text-dark ltr:right-4 rtl:left-4"
+                                                        @click="addContactModal = false"
+                                                    >
+                                                        <svg
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            width="24px"
+                                                            height="24px"
+                                                            viewBox="0 0 24 24"
+                                                            fill="none"
+                                                            stroke="currentColor"
+                                                            stroke-width="1.5"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            class="h-6 w-6"
+                                                        >
+                                                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                                                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                                                        </svg>
+                                                    </button>
+                                                    <h3
+                                                        class="bg-[#fbfbfb] py-3 text-lg font-medium ltr:pl-5 ltr:pr-[50px] rtl:pr-5 rtl:pl-[50px] dark:bg-[#121c2c]"
+                                                        x-text="params.id ? 'Edit Contact' : 'Add Contact'"
+                                                    ></h3>
+                                                    <div class="p-5">
+                                                        <form @submit.prevent="saveUser">
+                                                            <div class="mb-5">
+                                                                <label for="CustomerName">Supplier Name</label>
+                                                                <input
+                                                                    id="name"
+                                                                    type="text"
+                                                                    placeholder="Enter Name"
+                                                                    class="form-input"
+                                                                    x-model="params.name"
+                                                                />
+                                                            </div>
+                                                            <div class="mb-5">
+                                                                <label for="email">Email</label>
+                                                                <input
+                                                                    id="email"
+                                                                    type="email"
+                                                                    placeholder="Enter Email"
+                                                                    class="form-input"
+                                                                    x-model="params.email"
+                                                                />
+                                                            </div>
+                                                            <div class="mb-5">
+                                                                <label for="number">Phone Number</label>
+                                                                <input
+                                                                    id="number"
+                                                                    type="text"
+                                                                    placeholder="Enter Phone Number"
+                                                                    class="form-input"
+                                                                    x-model="params.phone"
+                                                                />
+                                                            </div>
+                                                            <div class="mb-5">
+                                                                <label for="occupation">Occupation</label>
+                                                                <input
+                                                                    id="occupation"
+                                                                    type="text"
+                                                                    placeholder="Enter Occupation"
+                                                                    class="form-input"
+                                                                    x-model="params.role"
+                                                                />
+                                                            </div>
+                                                            <div class="mb-5">
+                                                                <label for="address">Address</label>
+                                                                <textarea
+                                                                    id="address"
+                                                                    rows="3"
+                                                                    placeholder="Enter Address"
+                                                                    class="form-textarea min-h-[130px] resize-none"
+                                                                    x-model="params.location"
+                                                                ></textarea>
+                                                            </div>
+                                                            <div class="mt-8 flex items-center justify-end">
+                                                                <button type="button" class="btn btn-outline-danger" @click="addContactModal = false">
+                                                                    Cancel
+                                                                </button>
+                                                                <button
+                                                                    type="submit"
+                                                                    class="btn btn-primary ltr:ml-4 rtl:mr-4"
+                                                                    x-text="params.id ? 'Update' : 'Add'"
+                                                                ></button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button
+                                            type="button"
+                                            class="btn btn-outline-primary p-2"
+                                            :class="{ 'bg-primary text-white': displayType === 'list' }"
+                                            @click="setDisplayType('list')"
+                                        >
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5">
+                                                <path
+                                                    d="M2 5.5L3.21429 7L7.5 3"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path
+                                                    opacity="0.5"
+                                                    d="M2 12.5L3.21429 14L7.5 10"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path
+                                                    d="M2 19.5L3.21429 21L7.5 17"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path d="M22 19L12 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                                <path opacity="0.5" d="M22 12L12 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                                <path d="M22 5L12 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button
+                                            type="button"
+                                            class="btn btn-outline-primary p-2"
+                                            :class="{ 'bg-primary text-white': displayType === 'grid' }"
+                                            @click="setDisplayType('grid')"
+                                        >
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5">
+                                                <path
+                                                    opacity="0.5"
+                                                    d="M2.5 6.5C2.5 4.61438 2.5 3.67157 3.08579 3.08579C3.67157 2.5 4.61438 2.5 6.5 2.5C8.38562 2.5 9.32843 2.5 9.91421 3.08579C10.5 3.67157 10.5 4.61438 10.5 6.5C10.5 8.38562 10.5 9.32843 9.91421 9.91421C9.32843 10.5 8.38562 10.5 6.5 10.5C4.61438 10.5 3.67157 10.5 3.08579 9.91421C2.5 9.32843 2.5 8.38562 2.5 6.5Z"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                />
+                                                <path
+                                                    opacity="0.5"
+                                                    d="M13.5 17.5C13.5 15.6144 13.5 14.6716 14.0858 14.0858C14.6716 13.5 15.6144 13.5 17.5 13.5C19.3856 13.5 20.3284 13.5 20.9142 14.0858C21.5 14.6716 21.5 15.6144 21.5 17.5C21.5 19.3856 21.5 20.3284 20.9142 20.9142C20.3284 21.5 19.3856 21.5 17.5 21.5C15.6144 21.5 14.6716 21.5 14.0858 20.9142C13.5 20.3284 13.5 19.3856 13.5 17.5Z"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                />
+                                                <path
+                                                    d="M2.5 17.5C2.5 15.6144 2.5 14.6716 3.08579 14.0858C3.67157 13.5 4.61438 13.5 6.5 13.5C8.38562 13.5 9.32843 13.5 9.91421 14.0858C10.5 14.6716 10.5 15.6144 10.5 17.5C10.5 19.3856 10.5 20.3284 9.91421 20.9142C9.32843 21.5 8.38562 21.5 6.5 21.5C4.61438 21.5 3.67157 21.5 3.08579 20.9142C2.5 20.3284 2.5 19.3856 2.5 17.5Z"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                />
+                                                <path
+                                                    d="M13.5 6.5C13.5 4.61438 13.5 3.67157 14.0858 3.08579C14.6716 2.5 15.6144 2.5 17.5 2.5C19.3856 2.5 20.3284 2.5 20.9142 3.08579C21.5 3.67157 21.5 4.61438 21.5 6.5C21.5 8.38562 21.5 9.32843 20.9142 9.91421C20.3284 10.5 19.3856 10.5 17.5 10.5C15.6144 10.5 14.6716 10.5 14.0858 9.91421C13.5 9.32843 13.5 8.38562 13.5 6.5Z"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="relative">
+                                    <input
+                                        type="text"
+                                        placeholder="Search Contacts"
+                                        class="peer form-input py-2 ltr:pr-11 rtl:pl-11"
+                                        x-model="searchUser"
+                                        @keyup="searchContacts"
+                                    />
+                                    <div class="absolute top-1/2 -translate-y-1/2 peer-focus:text-primary ltr:right-[11px] rtl:left-[11px]">
+                                        <svg class="mx-auto" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="11.5" cy="11.5" r="9.5" stroke="currentColor" stroke-width="1.5" opacity="0.5"></circle>
+                                            <path d="M18.5 18.5L22 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
-                            <table id="myTable" class="table-hover whitespace-nowrap"></table>
                         </div>
+                        <div class="panel mt-5 overflow-hidden border-0 p-0">
+                            <template x-if="displayType === 'list'">
+                                <div class="table-responsive">
+                                    <table class="table-striped table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Supplier Name</th>
+                                                <th>Email</th>
+                                                <th>Addres1</th>
+                                                <th>Phone</th>
+                                                <th>City</th>
+                                                <th>State</th>
+                                                <th>Zip Code</th>
+                                                <th>Country</th>
+                                                <th>Balance</th>
+                                                <th>No.of Credit Days</th>
+                                                <th class="!text-center">Actions</th>
+                                                
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <template x-for="contact in filterdContactsList" :key="contact.id">
+                                                <tr>
+                                                    <td>
+                                                        <div class="flex w-max items-center">
+                                                            <!-- <div class="flex-none mr-3">
+                                                    <div class="p-1 bg-white-dark/30 rounded-full"><img class="h-8 w-8 rounded-full object-cover" src="assets/images/user-profile.jpeg" /></div>
+                                                </div> -->
+                                                            <div x-show="contact.path" class="w-max">
+                                                                <img
+                                                                    :src="`assets/images/${contact.path}`"
+                                                                    class="h-8 w-8 rounded-full object-cover ltr:mr-2 rtl:ml-2"
+                                                                    alt="avatar"
+                                                                />
+                                                            </div>
+                                                            <div
+                                                                x-show="!contact.path && contact.name"
+                                                                class="grid h-8 w-8 place-content-center rounded-full bg-primary text-sm font-semibold text-white ltr:mr-2 rtl:ml-2"
+                                                                x-text="contact.name.charAt(0) + '' + contact.name.charAt(contact.name.indexOf(' ') + 1)"
+                                                            ></div>
+                                                            <div
+                                                                x-show="!contact.path && !contact.name"
+                                                                class="rounded-full border border-gray-300 p-2 ltr:mr-2 rtl:ml-2 dark:border-gray-800"
+                                                            >
+                                                                <svg
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    class="h-4.5 w-4.5"
+                                                                >
+                                                                    <circle cx="12" cy="6" r="4" stroke="currentColor" stroke-width="1.5"></circle>
+                                                                    <ellipse
+                                                                        opacity="0.5"
+                                                                        cx="12"
+                                                                        cy="17"
+                                                                        rx="7"
+                                                                        ry="4"
+                                                                        stroke="currentColor"
+                                                                        stroke-width="1.5"
+                                                                    ></ellipse>
+                                                                </svg>
+                                                            </div>
+                                                            <div x-text="contact.name"></div>
+                                                        </div>
+                                                    </td>
+                                                    <td x-text="contact.email"></td>
+                                                    <td x-text="contact.location" class="whitespace-nowrap"></td>
+                                                    <td x-text="contact.phone" class="whitespace-nowrap"></td>
+                                                    <td x-text="contact.phone" class="whitespace-nowrap"></td>
+                                                    <td x-text="contact.phone" class="whitespace-nowrap"></td>
+                                                    <td x-text="contact.phone" class="whitespace-nowrap"></td>
+                                                    <td x-text="contact.name" class="whitespace-nowrap"></td>
+                                                    <td x-text="contact.phone" class="whitespace-nowrap"></td>
+                                                    <td x-text="contact.phone" class="whitespace-nowrap"></td>
+                                                    <td>
+                                                        <div class="flex items-center justify-center gap-4">
+                                                            <button type="button" class="btn btn-sm btn-outline-primary" @click="editUser(contact)">
+                                                                Edit
+                                                            </button>
+                                                            <button type="button" class="btn btn-sm btn-outline-danger" @click="deleteUser(contact)">
+                                                                Delete
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </template>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </template>
+                        </div>
+                        <template x-if="displayType === 'grid'">
+                            <div class="my-5 grid w-full grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+                                <template x-for="contact in filterdContactsList" :key="contact.id">
+                                    <div class="relative overflow-hidden rounded-md bg-white text-center shadow dark:bg-[#1c232f]">
+                                        <div class="rounded-t-md bg-white/40 bg-[url('../images/notification-bg.png')] bg-cover bg-center p-6 pb-0">
+                                            <template x-if="contact.path">
+                                                <img class="mx-auto max-h-40 w-4/5 object-contain" :src="`assets/images/${contact.path}`" />
+                                            </template>
+                                        </div>
+                                        <div class="relative -mt-10 px-6 pb-24">
+                                            <div class="rounded-md bg-white px-2 py-4 shadow-md dark:bg-gray-900">
+                                                <div class="text-xl" x-text="contact.name"></div>
+                                                <div class="text-white-dark" x-text="contact.role"></div>
+                                                <div class="mt-6 flex flex-wrap items-center justify-between gap-3">
+                                                    <div class="flex-auto">
+                                                        <div class="text-info" x-text="contact.posts"></div>
+                                                        <div>Posts</div>
+                                                    </div>
+                                                    <div class="flex-auto">
+                                                        <div class="text-info" x-text="contact.following"></div>
+                                                        <div>Following</div>
+                                                    </div>
+                                                    <div class="flex-auto">
+                                                        <div class="text-info" x-text="contact.followers"></div>
+                                                        <div>Followers</div>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-4">
+                                                    <ul class="flex items-center justify-center space-x-4 rtl:space-x-reverse">
+                                                        <li>
+                                                            <a href="javascript:;" class="btn btn-outline-primary h-7 w-7 rounded-full p-0">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24px"
+                                                                    height="24px"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="1.5"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="h-4 w-4"
+                                                                >
+                                                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                                                </svg>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:;" class="btn btn-outline-primary h-7 w-7 rounded-full p-0">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24px"
+                                                                    height="24px"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="1.5"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="h-4 w-4"
+                                                                >
+                                                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                                                </svg>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:;" class="btn btn-outline-primary h-7 w-7 rounded-full p-0">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24px"
+                                                                    height="24px"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="1.5"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="h-4 w-4"
+                                                                >
+                                                                    <path
+                                                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                                                    ></path>
+                                                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                                                    <circle cx="4" cy="4" r="2"></circle>
+                                                                </svg>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:;" class="btn btn-outline-primary h-7 w-7 rounded-full p-0">
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24px"
+                                                                    height="24px"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="1.5"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                    class="h-4 w-4"
+                                                                >
+                                                                    <path
+                                                                        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                                                                    ></path>
+                                                                </svg>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="mt-6 grid grid-cols-1 gap-4 ltr:text-left rtl:text-right">
+                                                <div class="flex items-center">
+                                                    <div class="flex-none ltr:mr-2 rtl:ml-2">Email :</div>
+                                                    <div class="truncate text-white-dark" x-text="contact.email"></div>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <div class="flex-none ltr:mr-2 rtl:ml-2">Phone :</div>
+                                                    <div class="text-white-dark" x-text="contact.phone"></div>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <div class="flex-none ltr:mr-2 rtl:ml-2">Address :</div>
+                                                    <div class="text-white-dark" x-text="contact.location"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="absolute bottom-0 mt-6 flex w-full gap-4 p-6 ltr:left-0 rtl:right-0">
+                                            <button type="button" class="btn btn-outline-primary w-1/2" @click="editUser(contact)">Edit</button>
+                                            <button type="button" class="btn btn-outline-danger w-1/2" @click="deleteUser(contact)">Delete</button>
+                                        </div>
+                                    </div>
+                                </template>
+                            </div>
+                        </template>
                     </div>
                     <!-- end main content section -->
 
@@ -2487,20 +2887,19 @@
 
                 <!-- start footer section -->
                 <div class="p-6 pt-0 mt-auto text-center dark:text-white-dark ltr:sm:text-left rtl:sm:text-right">
-                   <center> © <span id="footer-year">2023</span>. Buraq Accounting All rights reserved.
+                    © <span id="footer-year">2024</span>. Buraq Accounting All rights reserved.
                 </div>
                 <!-- end footer section -->
             </div>
         </div>
 
-        <script src="assets/js/highlight.min.js"></script>
         <script src="assets/js/alpine-collaspe.min.js"></script>
         <script src="assets/js/alpine-persist.min.js"></script>
         <script defer src="assets/js/alpine-ui.min.js"></script>
         <script defer src="assets/js/alpine-focus.min.js"></script>
         <script defer src="assets/js/alpine.min.js"></script>
         <script src="assets/js/custom.js"></script>
-        <script src="assets/js/simple-datatables.js"></script>
+
         <script>
             document.addEventListener('alpine:init', () => {
                 // main section
@@ -2713,76 +3112,267 @@
                         this.messages = this.messages.filter((d) => d.id !== value);
                     },
                 }));
+                //contacts
+                Alpine.data('contacts', () => ({
+                    defaultParams: {
+                        id: null,
+                        name: '',
+                        email: '',
+                        role: '',
+                        phone: '',
+                        location: '',
+                    },
+                    displayType: 'list',
+                    addContactModal: false,
+                    params: {
+                        id: null,
+                        name: '',
+                        email: '',
+                        role: '',
+                        phone: '',
+                        location: '',
+                    },
+                    filterdContactsList: [],
+                    searchUser: '',
+                    contactList: [
+                        {
+                            id: 1,
+                            path: 'profile-35.png',
+                            name: 'Alan Green',
+                            role: 'Web Developer',
+                            email: 'alan@mail.com',
+                            location: 'Boston, USA',
+                            phone: '+1 202 555 0197',
+                            posts: 25,
+                            followers: '5K',
+                            following: 500,
+                        },
+                        {
+                            id: 2,
+                            path: 'profile-35.png',
+                            name: 'Linda Nelson',
+                            role: 'Web Designer',
+                            email: 'linda@mail.com',
+                            location: 'Sydney, Australia',
+                            phone: '+1 202 555 0170',
+                            posts: 25,
+                            followers: '21.5K',
+                            following: 350,
+                        },
+                        {
+                            id: 3,
+                            path: 'profile-35.png',
+                            name: 'Lila Perry',
+                            role: 'UX/UI Designer',
+                            email: 'lila@mail.com',
+                            location: 'Miami, USA',
+                            phone: '+1 202 555 0105',
+                            posts: 20,
+                            followers: '21.5K',
+                            following: 350,
+                        },
+                        {
+                            id: 4,
+                            path: 'profile-35.png',
+                            name: 'Andy King',
+                            role: 'Project Lead',
+                            email: 'andy@mail.com',
+                            location: 'Tokyo, Japan',
+                            phone: '+1 202 555 0194',
+                            posts: 25,
+                            followers: '21.5K',
+                            following: 300,
+                        },
+                        {
+                            id: 5,
+                            path: 'profile-35.png',
+                            name: 'Jesse Cory',
+                            role: 'Web Developer',
+                            email: 'jesse@mail.com',
+                            location: 'Edinburgh, UK',
+                            phone: '+1 202 555 0161',
+                            posts: 30,
+                            followers: '20K',
+                            following: 350,
+                        },
+                        {
+                            id: 6,
+                            path: 'profile-35.png',
+                            name: 'Xavier',
+                            role: 'UX/UI Designer',
+                            email: 'xavier@mail.com',
+                            location: 'New York, USA',
+                            phone: '+1 202 555 0155',
+                            posts: 25,
+                            followers: '21.5K',
+                            following: 350,
+                        },
+                        {
+                            id: 7,
+                            path: 'profile-35.png',
+                            name: 'Susan',
+                            role: 'Project Manager',
+                            email: 'susan@mail.com',
+                            location: 'Miami, USA',
+                            phone: '+1 202 555 0118',
+                            posts: 40,
+                            followers: '21.5K',
+                            following: 350,
+                        },
+                        {
+                            id: 8,
+                            path: 'profile-35.png',
+                            name: 'Raci Lopez',
+                            role: 'Web Developer',
+                            email: 'traci@mail.com',
+                            location: 'Edinburgh, UK',
+                            phone: '+1 202 555 0135',
+                            posts: 25,
+                            followers: '21.5K',
+                            following: 350,
+                        },
+                        {
+                            id: 9,
+                            path: 'profile-35.png',
+                            name: 'Steven Mendoza',
+                            role: 'HR',
+                            email: 'sokol@verizon.net',
+                            location: 'Monrovia, US',
+                            phone: '+1 202 555 0100',
+                            posts: 40,
+                            followers: '21.8K',
+                            following: 300,
+                        },
+                        {
+                            id: 10,
+                            path: 'profile-35.png',
+                            name: 'James Cantrell',
+                            role: 'Web Developer',
+                            email: 'sravani@comcast.net',
+                            location: 'Michigan, US',
+                            phone: '+1 202 555 0134',
+                            posts: 100,
+                            followers: '28K',
+                            following: 520,
+                        },
+                        {
+                            id: 11,
+                            path: 'profile-35.png',
+                            name: 'Reginald Brown',
+                            role: 'Web Designer',
+                            email: 'drhyde@gmail.com',
+                            location: 'Entrimo, Spain',
+                            phone: '+1 202 555 0153',
+                            posts: 35,
+                            followers: '25K',
+                            following: 500,
+                        },
+                        {
+                            id: 12,
+                            path: 'profile-35.png',
+                            name: 'Stacey Smith',
+                            role: 'Chief technology officer',
+                            email: 'maikelnai@optonline.net',
+                            location: 'Lublin, Poland',
+                            phone: '+1 202 555 0115',
+                            posts: 21,
+                            followers: '5K',
+                            following: 200,
+                        },
+                    ],
 
-                Alpine.data('exportTable', () => ({
-                    datatable: null,
                     init() {
-                        this.datatable = new simpleDatatables.DataTable('#myTable', {
-                            data: {
-                                headings: ['SL.', 'Supplier Name', 'Address1', 'Mobile No.', 'Email', 'City', 'State', 'Zip Code','Country', 'Balance', 'No. of Credit Days', 'Action'],
-                                data: [
-                                   
-                                ],
-                            },
-                            perPage: 10,
-                            perPageSelect: [10, 20, 30, 50, 100],
-                            columns: [
-                                {
-                                    select: 0,
-                                    sort: 'asc',
-                                },
-                                {
-                                    select: 5,
-                                    render: (data, cell, row) => {
-                                        return this.formatDate(data);
-                                    },
-                                },
-                            ],
-                            firstLast: true,
-                            firstText:
-                                '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-4.5 h-4.5 rtl:rotate-180"> <path d="M13 19L7 12L13 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> <path opacity="0.5" d="M16.9998 19L10.9998 12L16.9998 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> </svg>',
-                            lastText:
-                                '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-4.5 h-4.5 rtl:rotate-180"> <path d="M11 19L17 12L11 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> <path opacity="0.5" d="M6.99976 19L12.9998 12L6.99976 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> </svg>',
-                            prevText:
-                                '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-4.5 h-4.5 rtl:rotate-180"> <path d="M15 5L9 12L15 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> </svg>',
-                            nextText:
-                                '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-4.5 h-4.5 rtl:rotate-180"> <path d="M9 5L15 12L9 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> </svg>',
-                            labels: {
-                                perPage: '{select}',
-                            },
-                            layout: {
-                                top: '{search}',
-                                bottom: '{info}{select}{pager}',
-                            },
+                        this.searchContacts();
+                    },
+
+                    searchContacts() {
+                        this.filterdContactsList = this.contactList.filter((d) => d.name.toLowerCase().includes(this.searchUser.toLowerCase()));
+                    },
+
+                    editUser(user) {
+                        this.params = this.defaultParams;
+                        if (user) {
+                            this.params = JSON.parse(JSON.stringify(user));
+                        }
+
+                        this.addContactModal = true;
+                    },
+
+                    saveUser() {
+                        if (!this.params.name) {
+                            this.showMessage('Name is required.', 'error');
+                            return true;
+                        }
+                        if (!this.params.email) {
+                            this.showMessage('Email is required.', 'error');
+                            return true;
+                        }
+                        if (!this.params.phone) {
+                            this.showMessage('Phone is required.', 'error');
+                            return true;
+                        }
+                        if (!this.params.role) {
+                            this.showMessage('Occupation is required.', 'error');
+                            return true;
+                        }
+
+                        if (this.params.id) {
+                            //update user
+                            let user = this.contactList.find((d) => d.id === this.params.id);
+                            user.name = this.params.name;
+                            user.email = this.params.email;
+                            user.role = this.params.role;
+                            user.phone = this.params.phone;
+                            user.location = this.params.location;
+                        } else {
+                            //add user
+                            let maxUserId = this.contactList.length
+                                ? this.contactList.reduce((max, character) => (character.id > max ? character.id : max), this.contactList[0].id)
+                                : 0;
+
+                            let user = {
+                                id: maxUserId + 1,
+                                path: 'profile-35.png',
+                                name: this.params.name,
+                                email: this.params.email,
+                                role: this.params.role,
+                                phone: this.params.phone,
+                                location: this.params.location,
+                                posts: 20,
+                                followers: '5K',
+                                following: 500,
+                            };
+                            this.contactList.splice(0, 0, user);
+                            this.searchContacts();
+                        }
+
+                        this.showMessage('User has been saved successfully.');
+                        this.addContactModal = false;
+                    },
+
+                    deleteUser(user) {
+                        this.contactList = this.contactList.filter((d) => d.id != user.id);
+                        // this.ids = this.ids.filter((d) => d != user.id);
+                        this.searchContacts();
+                        this.showMessage('User has been deleted successfully.');
+                    },
+
+                    setDisplayType(type) {
+                        this.displayType = type;
+                    },
+
+                    showMessage(msg = '', type = 'success') {
+                        const toast = window.Swal.mixin({
+                            toast: true,
+                            position: 'top',
+                            showConfirmButton: false,
+                            timer: 3000,
                         });
-                    },
-
-                    exportTable(eType) {
-                        var data = {
-                            type: eType,
-                            filename: 'table',
-                            download: true,
-                        };
-
-                        if (data.type === 'csv') {
-                            data.lineDelimiter = '\n';
-                            data.columnDelimiter = ';';
-                        }
-                        this.datatable.export(data);
-                    },
-
-                    printTable() {
-                        this.datatable.print();
-                    },
-
-                    formatDate(date) {
-                        if (date) {
-                            const dt = new Date(date);
-                            const month = dt.getMonth() + 1 < 10 ? '0' + (dt.getMonth() + 1) : dt.getMonth() + 1;
-                            const day = dt.getDate() < 10 ? '0' + dt.getDate() : dt.getDate();
-                            return day + '/' + month + '/' + dt.getFullYear();
-                        }
-                        return '';
+                        toast.fire({
+                            icon: type,
+                            title: msg,
+                            padding: '10px 20px',
+                        });
                     },
                 }));
             });

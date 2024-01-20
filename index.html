@@ -12,6 +12,7 @@
         <link rel="stylesheet" type="text/css" media="screen" href="assets/css/perfect-scrollbar.min.css" />
         <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
         <link defer rel="stylesheet" type="text/css" media="screen" href="assets/css/animate.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="assets/js/perfect-scrollbar.min.js"></script>
         <script defer src="assets/js/popper.min.js"></script>
         <script defer src="assets/js/tippy-bundle.umd.min.js"></script>
@@ -426,9 +427,9 @@
                             </a>
                         </li>
                         
-
+    
                             <!---->
-
+    
                             <h2 class="-mx-4 mb-1 flex items-center bg-white-light/30 px-7 py-3 font-extrabold uppercase dark:bg-dark dark:bg-opacity-[0.08]">
                                 <svg
                                     class="hidden h-5 w-4 flex-none"
@@ -443,7 +444,7 @@
                                 </svg>
                                 
                             </h2>
-
+    
                             <li class="menu nav-item" x-data="{ activeDropdown: null, quotationDropdown: null }">
                                 <button
                                     type="button"
@@ -564,9 +565,9 @@
                             </script>
                         </li>
                         
-
+    
                                     <!---->
-
+    
                                     <li class="nav-item" x-data="{ activeDropdown: null, productDropdown: null }">
                                         <button
                                             type="button"
@@ -586,11 +587,11 @@
                                         </button>
                                         <ul x-cloak x-show="activeDropdown === 'product'" x-collapse class="sub-menu text-gray-500">
                                             <li><a href="add-category.html">Add Category</a></li>
-                                            <li><a href="category-list.html">Category List</a></li>
+                                            <li><a href="category.html">Category List</a></li>
                                             <li><a href="add-unit.html">Add Unit</a></li>
-                                            <li><a href="unit-list.html">Unit List</a></li>
+                                            <li><a href="add-unit.html">Unit List</a></li>
                                             <li><a href="add-product.html">Add Product</a></li>
-                                            <li><a href="add-product-csc.html">Add Product (CSV)</a></li>
+                                            <li><a href="add-product-csv.html">Add Product (CSV)</a></li>
                                             <li><a href="manage-product.html">Manage Product</a></li>
                                         </ul>
                                     
@@ -602,9 +603,9 @@
                                         </script>
                                     </li>
                                     
-
+    
                                     <!---->
-
+    
                                     <li class="nav-item" x-data="{ activeDropdown: null, purchaseDropdown: null }">
                                         <button
                                             type="button"
@@ -635,9 +636,9 @@
                                         </script>
                                     </li>
                                     
-
+    
                                     <!---->
-
+    
                                     <li class="nav-item" x-data="{ activeDropdown: null, stockDropdown: null }">
                                         <button
                                             type="button"
@@ -667,7 +668,7 @@
                                         </script>
                                     </li>
                                     
-
+    
                                     <!---->
                                     <li class="menu nav-item" x-data="{ activeDropdown: null, accountsDropdown: null, reportDropdown: null }">
                                         <button
@@ -693,23 +694,23 @@
                                             </div>
                                         </button>
                                         <ul x-cloak x-show="activeDropdown === 'accounts'" x-collapse class="sub-menu text-gray-500">
-                                            <li><a href="chart-of-account.html">Chart Of Account</a></li>
-                                            <li><a href="sub-account-list.html">Sub Account List</a></li>
+                                            <li><a href="chart.of.acc.html">Chart Of Account</a></li>
+                                            <li><a href="subaccount-list.html">Sub Account List</a></li>
                                             <li><a href="predefined-accounts.html">Predefined Accounts</a></li>
                                             <li><a href="financial-year.html">Financial Year</a></li>
                                             <li><a href="opening-balance.html">Opening Balance</a></li>
                                             <li><a href="payment-voucher.html">Payment Voucher</a></li>
-                                            <li><a href="receipt-voucher.html">Receipt Voucher</a></li>
+                                            <li><a href="reciept-voucher.html">Receipt Voucher</a></li>
                                             <li><a href="contra-voucher.html">Contra Voucher</a></li>
-                                            <li><a href="journal-voucher.html">Journal Voucher</a></li>
+                                            <li><a href="journal-voucher.hml">Journal Voucher</a></li>
                                             <li><a href="bank-reconciliation.html">Bank Reconciliation</a></li>
                                             <li><a href="add-payment-method.html">Add Payment Method</a></li>
-                                            <li><a href="payment-method-list.html">Payment Method List</a></li>
-                                            <li><a href="supplier-payment.html">Supplier Payment</a></li>
-                                            <li><a href="customer-receive.html">Customer Receive</a></li>
-                                            <li><a href="service-payment.html">Service Payment</a></li>
+                                            <li><a href="add-payment-method.html">Payment Method List</a></li>
+                                            <li><a href="supplier-paymet.html">Supplier Payment</a></li>
+                                            <li><a href="customer-receiver.html">Customer Receive</a></li>
+                                            <li><a href="service-paymet.html">Service Payment</a></li>
                                             <li><a href="cash-adjustment.html">Cash Adjustment</a></li>
-                                            <li><a href="voucher-approval.html">Voucher Approval</a></li>
+                                            <li><a href="#">Voucher Approval</a></li>
                                             <li class="menu" x-data="{ reportDropdown: null }">
                                                 <button
                                                     type="button"
@@ -733,9 +734,9 @@
                                                     </div>
                                                 </button>
                                                 <ul x-cloak x-show="reportDropdown === 'reports'" x-collapse class="sub-menu text-gray-500">
-                                                    <li><a href="cash-book.html">Cash Book</a></li>
-                                                    <li><a href="bank-book.html">Bank Book</a></li>
-                                                    <li><a href="day-book.html">Day Book</a></li>
+                                                    <li><a href="cashook.html">Cash Book</a></li>
+                                                    <li><a href="bankbook.html">Bank Book</a></li>
+                                                    <li><a href="daybook.html">Day Book</a></li>
                                                     <li><a href="general-ledger.html">General Ledger</a></li>
                                                     <li><a href="sub-ledger.html">Sub Ledger</a></li>
                                                     <li><a href="trial-balance.html">Trial Balance</a></li>
@@ -745,8 +746,8 @@
                                                     <li><a href="balance-sheet.html">Balance Sheet</a></li>
                                                     <li><a href="fixed-asset-schedule.html">Fixed Asset Schedule</a></li>
                                                     <li><a href="receipt-payment.html">Receipt & Payment</a></li>
-                                                    <li><a href="bank-reconciliation-report.html">Bank Reconciliation Report</a></li>
-                                                    <li><a href="coa-point.html">Coa Point</a></li>
+                                                    <li><a href="bank-recou-report.html">Bank Reconciliation Report</a></li>
+                                                    <li><a href="coa-print.html">Coa Point</a></li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -763,9 +764,9 @@
                                         </script>
                                     </li>
                                     
-
+    
                                     <!---->
-
+    
                                     <li class="nav-item" x-data="{ activeDropdown: null, reportDropdown: null }">
                                         <button
                                             type="button"
@@ -792,19 +793,19 @@
                                         <ul x-cloak x-show="activeDropdown === 'report'" x-collapse class="sub-menu text-gray-500">
                                             <li><a href="closing.html">Closing</a></li>
                                             <li><a href="closing-report.html">Closing Report</a></li>
-                                            <li><a href="todays-customer-receipt.html">Todays Customer Receipt</a></li>
+                                            <li><a href="todays-customer-report.html">Todays Customer Receipt</a></li>
                                             <li><a href="sales-report.html">Sales Report</a></li>
-                                            <li><a href="purchase-report.html">Purchase Report</a></li>
+                                            <li><a href="purches-report.html">Purchase Report</a></li>
                                             <li><a href="user-wise-sales-report.html">User Wise Sales Report</a></li>
                                             <li><a href="customer-due-report.html">Customer Due Report</a></li>
                                             <li><a href="shipping-cost-report.html">Shipping Cost Report</a></li>
-                                            <li><a href="purchase-report-category-wise.html">Purchase Report (Category Wise)</a></li>
-                                            <li><a href="sales-report-category-wise.html">Sales Report (Category Wise)</a></li>
-                                            <li><a href="sales-report-product-wise.html">Sales Report (Product Wise)</a></li>
-                                            <li><a href="sales-return.html">Sales Return</a></li>
-                                            <li><a href="supplier-return.html">Supplier Return</a></li>
+                                            <li><a href="category-wise-purchaes-report.html">Purchase Report (Category Wise)</a></li>
+                                            <li><a href="category-wise-sales-report.html">Sales Report (Category Wise)</a></li>
+                                            <li><a href="sales-report.html">Sales Report (Product Wise)</a></li>
+                                            <li><a href="sales-return-report.html">Sales Return</a></li>
+                                            <li><a href="suplier-return-report.html">Supplier Return</a></li>
                                             <li><a href="tax-report.html">TAX Report</a></li>
-                                            <li><a href="profit-report-sale-wise.html">Profit Report (Sale Wise)</a></li>
+                                            <li><a href="profit-report.html">Profit Report (Sale Wise)</a></li>
                                         </ul>
                                     
                                         <script>
@@ -815,13 +816,13 @@
                                     </li>
                                     
                             <!---->
-
+    
                             
                            
                             <!---->
-
+    
                            
-
+    
                             <li class="menu nav-item" x-data="{ activeDropdown: null }">
                                 <button
                                     type="button"
@@ -891,8 +892,8 @@
                                             </div>
                                         </button>
                                         <ul x-cloak x-show="attendanceDropdown === 'attendance'" x-collapse class="sub-menu text-gray-500">
-                                            <li><a href="attendance.html">Attendance</a></li>
-                                            <li><a href="manage-attendance.html">Manage Attendance</a></li>
+                                            <li><a href="#">Attendance</a></li>
+                                            <li><a href="#">Manage Attendance</a></li>
                                             <li><a href="attendance-report.html">Attendance Report</a></li>
                                         </ul>
                                     </li>
@@ -924,9 +925,9 @@
                                 </ul>
                             </li>
                             
-
+    
                             <!---->
-
+    
                             <li class="menu nav-item" x-data="{ activeDropdown: null }">
                                 <button
                                     type="button"
@@ -945,14 +946,14 @@
                                     </div>
                                 </button>
                                 <ul x-cloak x-show="activeDropdown === 'bank'" x-collapse class="sub-menu text-gray-500">
-                                    <li><a href="add-new-bank.html">Add New Bank</a></li>
-                                    <li><a href="manage-bank.html">Manage Bank</a></li>
+                                    <li><a href="add-bank.html">Add New Bank</a></li>
+                                    <li><a href="#">Manage Bank</a></li>
                                 </ul>
                             </li>
                             
-
+    
                             <!---->
-
+    
                             <li class="menu nav-item" x-data="{ activeDropdown: null }">
                                 <button
                                     type="button"
@@ -978,9 +979,9 @@
                                 </ul>
                             </li>
                             
-
+    
                             <!---->
-
+    
                             <li class="menu nav-item" x-data="{ activeDropdown: null }">
                                 <button
                                     type="button"
@@ -999,14 +1000,14 @@
                                     </div>
                                 </button>
                                 <ul x-cloak x-show="activeDropdown === 'tax'" x-collapse class="sub-menu text-gray-500">
-                                    <li><a href="vat-tax-setting.html">VAT & TAX Setting</a></li>
-                                    <li><a href="tax-settings.html">TAX Settings</a></li>
+                                    <li><a href="vatandtaxsetting.html">VAT & TAX Setting</a></li>
+                                    <li><a href="#">TAX Settings</a></li>
                                 </ul>
                             </li>
                             
-
+    
                             <!---->
-
+    
                             <li class="menu nav-item" x-data="{ activeDropdown: null }">
                                 <button
                                     type="button"
@@ -1025,10 +1026,10 @@
                                     </div>
                                 </button>
                                 <ul x-cloak x-show="activeDropdown === 'return'" x-collapse class="sub-menu text-gray-500">
-                                    <li><a href="return.html">Return</a></li>
+                                    <li><a href="return-list.html">Return</a></li>
                                     <li><a href="stock-return-list.html">Stock Return List</a></li>
-                                    <li><a href="supplier-return-list.html">Supplier Return List</a></li>
-                                    <li><a href="wastage-return-list.html">Wastage Return List</a></li>
+                                    <li><a href="suppier-return-list.html">Supplier Return List</a></li>
+                                    <li><a href="wastege-return-list.html">Wastage Return List</a></li>
                                 </ul>
                             </li>
                         </div>
