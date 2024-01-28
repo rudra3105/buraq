@@ -25,6 +25,8 @@
     <script defer src="assets/js/sweetalert.min.js"></script>
 </head>
 
+
+
 <body x-data="main" class="relative overflow-x-hidden font-nunito text-sm font-normal antialiased"
     :class="[ $store.app.sidebar ? 'toggle-sidebar' : '', $store.app.theme === 'dark' || $store.app.isDarkMode ?  'dark' : '', $store.app.menu, $store.app.layout,$store.app.rtlClass]">
     <!-- sidebar menu overlay -->
@@ -366,7 +368,7 @@
                                     </button>
                                     <ul x-cloak x-show="quotationDropdown === 'quotation'" x-collapse
                                         class="sub-menu text-gray-500">
-                                        <li><a href="add-quotation.html">Add Quotation</a></li>
+                                        <li><a href="add-quatation.html">Add Quotation</a></li>
                                         <li><a href="manage-quotation.html">Manage Quotation</a></li>
                                     </ul>
                                 </li>
@@ -467,7 +469,7 @@
                             </button>
                             <ul x-cloak x-show="activeDropdown === 'product'" x-collapse class="sub-menu text-gray-500">
                                 <li><a href="add-category.html">Add Category</a></li>
-                                <li><a href="category.html">Category List</a></li>
+                                <li><a href="category-list.html"> Category List</a></li>
                                 <li><a href="add-unit.html">Add Unit</a></li>
                                 <li><a href="add-unit.html">Unit List</a></li>
                                 <li><a href="add-product.html">Add Product</a></li>
@@ -568,7 +570,40 @@
                             </button>
                             <ul x-cloak x-show="activeDropdown === 'accounts'" x-collapse
                                 class="sub-menu text-gray-500">
+                                <li class="nav-item" x-data="{ activeDropdown: null, purchaseDropdown: null }">
+                                    <button type="button" class="group" :class="{'active' : activeDropdown === 'purchase'}"
+                                        @click="togglePurchaseDropdown">
+                                        <div class="flex items-center">
+        
+                                            <span
+                                                class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">COA</span>
+                                        </div>
+                                        <div class="rtl:rotate-180" :class="{'!rotate-90' : activeDropdown === 'purchase'}">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 5L15 12L9 19" stroke="currentColor" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                    </button>
+                                    <ul x-cloak x-show="activeDropdown === 'purchase'" x-collapse
+                                        class="sub-menu text-gray-500">
+                                        <li><a href="head.html">Head</a></li>
+                                        <li><a href="subhead.html">Sub Head</a></li>
+                                        <li><a href="category.html">category</a></li>
+                                        <li><a href="ledger.html">Ledger</a></li>
+                                    </ul>
+        
+                                    <script>
+                                        function togglePurchaseDropdown() {
+                                            this.activeDropdown = this.activeDropdown === 'purchase' ? null : 'purchase';
+                                            this.purchaseDropdown = null;
+                                        }
+                                    </script>
+                                </li>
+
                                 <li><a href="chart.of.acc.html">Chart Of Account</a></li>
+
                                 <li><a href="subaccount-list.html">Sub Account List</a></li>
                                 <li><a href="predefined-accounts.html">Predefined Accounts</a></li>
                                 <li><a href="financial-year.html">Financial Year</a></li>
@@ -585,16 +620,15 @@
                                 <li><a href="service-paymet.html">Service Payment</a></li>
                                 <li><a href="cash-adjustment.html">Cash Adjustment</a></li>
                                 <li><a href="#">Voucher Approval</a></li>
-                                <li class="menu" x-data="{ reportDropdown: null }">
-                                    <button type="button" class="group"
-                                        :class="{'active' : reportDropdown === 'reports'}"
-                                        @click="toggleReportDropdown">
+                                <li class="nav-item" x-data="{ activeDropdown: null, purchaseDropdown: null }">
+                                    <button type="button" class="group" :class="{'active' : activeDropdown === 'purchase'}"
+                                        @click="togglePurchaseDropdown">
                                         <div class="flex items-center">
+        
                                             <span
                                                 class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">Report</span>
                                         </div>
-                                        <div class="rtl:rotate-180"
-                                            :class="{'!rotate-90' : reportDropdown === 'reports'}">
+                                        <div class="rtl:rotate-180" :class="{'!rotate-90' : activeDropdown === 'purchase'}">
                                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M9 5L15 12L9 19" stroke="currentColor" stroke-width="1.5"
@@ -602,11 +636,11 @@
                                             </svg>
                                         </div>
                                     </button>
-                                    <ul x-cloak x-show="reportDropdown === 'reports'" x-collapse
+                                    <ul x-cloak x-show="activeDropdown === 'purchase'" x-collapse
                                         class="sub-menu text-gray-500">
-                                        <li><a href="cashook.html">Cash Book</a></li>
-                                        <li><a href="bankbook.html">Bank Book</a></li>
-                                        <li><a href="daybook.html">Day Book</a></li>
+                                        <li><a href="cash-book.html">Cash Book</a></li>
+                                        <li><a href="bank-book.html">Bank Book</a></li>
+                                        <li><a href="day-book.html">Day Book</a></li>
                                         <li><a href="general-ledger.html">General Ledger</a></li>
                                         <li><a href="sub-ledger.html">Sub Ledger</a></li>
                                         <li><a href="trial-balance.html">Trial Balance</a></li>
@@ -616,9 +650,16 @@
                                         <li><a href="balance-sheet.html">Balance Sheet</a></li>
                                         <li><a href="fixed-asset-schedule.html">Fixed Asset Schedule</a></li>
                                         <li><a href="receipt-payment.html">Receipt & Payment</a></li>
-                                        <li><a href="bank-recou-report.html">Bank Reconciliation Report</a></li>
-                                        <li><a href="coa-print.html">Coa Point</a></li>
+                                        <li><a href="bank-reconciliation-report.html">Bank Reconciliation Report</a></li>
+                                        <li><a href="coa-point.html">Coa Point</a></li>
                                     </ul>
+        
+                                    <script>
+                                        function togglePurchaseDropdown() {
+                                            this.activeDropdown = this.activeDropdown === 'purchase' ? null : 'purchase';
+                                            this.purchaseDropdown = null;
+                                        }
+                                    </script>
                                 </li>
                             </ul>
 
@@ -738,8 +779,8 @@
                                     </button>
                                     <ul x-cloak x-show="attendanceDropdown === 'attendance'" x-collapse
                                         class="sub-menu text-gray-500">
-                                        <li><a href="#">Attendance</a></li>
-                                        <li><a href="#">Manage Attendance</a></li>
+                                        <li><a href="attandance.html">Attendance</a></li>
+                                        <li><a href="manage-attandance.html">Manage Attendance</a></li>
                                         <li><a href="attendance-report.html">Attendance Report</a></li>
                                     </ul>
                                 </li>
@@ -786,7 +827,7 @@
                             </button>
                             <ul x-cloak x-show="activeDropdown === 'bank'" x-collapse class="sub-menu text-gray-500">
                                 <li><a href="add-bank.html">Add New Bank</a></li>
-                                <li><a href="#">Manage Bank</a></li>
+                                <li><a href="manage-bank.html">Manage Bank</a></li>
                             </ul>
                         </li>
 
@@ -839,7 +880,7 @@
                             </button>
                             <ul x-cloak x-show="activeDropdown === 'tax'" x-collapse class="sub-menu text-gray-500">
                                 <li><a href="vatandtaxsetting.html">VAT & TAX Setting</a></li>
-                                <li><a href="#">TAX Settings</a></li>
+                                <li><a href="tax-setting.html">TAX Settings</a></li>
                             </ul>
                         </li>
 
@@ -874,7 +915,6 @@
             </nav>
         </div>
         <!-- end sidebar section -->
-
         <div class="main-content flex min-h-screen flex-col">
             <!-- start header section -->
             <header class="z-40" :class="{'dark' : $store.app.semidark && $store.app.menu === 'horizontal'}">
